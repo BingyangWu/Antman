@@ -347,7 +347,7 @@ def _find_cudnn_config(base_paths, required_version):
   header_path, header_version = _find_header(base_paths, "cudnn.h",
                                              required_version,
                                              get_header_version)
-  cudnn_version = "8" # header_version.split(".")[0]
+  cudnn_version = "7" # header_version.split(".")[0]
 
   library_path = _find_library(base_paths, "cudnn", cudnn_version)
 
