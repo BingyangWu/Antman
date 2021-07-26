@@ -1,0 +1,17 @@
+{
+    "gpuUsageInfo": {
+        "1b:00.0": {
+            "deviceMemPoolSize": 444596224,
+            "deviceMemStable": 27334144,
+            "deviceMemUsedMax": 626334720,
+            "deviceMemUsedMin": 27334144,
+            "deviceMemUsedNvidia": -1,
+            "hostMemPoolSize": 1205035008,
+            "hostMemUsedMax": 1016291328,
+            "hostMemUsedMin": 9658368,
+            "swapReason": "no reason"
+        }
+    },
+    "miniBatchDuration": 456497,
+    "name": "useless field"
+}
