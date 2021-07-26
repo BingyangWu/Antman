@@ -3282,17 +3282,8 @@ tf_cuda_library(
         "public/session.h",
         "public/session_options.h",
         "public/version.h",
-    ] + [
-        "//tensorflow/contrib/resource_management:gpu_resource_management.cc",
-        "//tensorflow/contrib/resource_management:file_listener.cc",
-        "//tensorflow/contrib/resource_management:gpu_usage_adjustment.cc",
     ],
-    hdrs = [
-        "//tensorflow/contrib/resource_management:gpu_resource_management.h",
-        "//tensorflow/contrib/resource_management:file_listener.h",
-        "//tensorflow/contrib/resource_management:gpu_usage_adjustment.h",
-        "//tensorflow/core/platform:stream_executor.h",
-    ] + CORE_CPU_LIB_HEADERS + GPU_RUNTIME_HEADERS,
+    hdrs = CORE_CPU_LIB_HEADERS,
     copts = tf_copts() + tf_openmp_copts(),
     deps = [
         ":bfc_allocator",
@@ -3317,6 +3308,7 @@ tf_cuda_library(
         "//tensorflow/stream_executor/platform:dso_loader",
         "//tensorflow/stream_executor/rocm:rocm_platform_id",
         "//tensorflow/stream_executor:scratch_allocator",
+        "//tensorflow/contrib/resource_management:gpu_resource_management",
     ] + mkl_deps(),
     alwayslink = 1,
 )
