@@ -3282,6 +3282,10 @@ tf_cuda_library(
         "public/session.h",
         "public/session_options.h",
         "public/version.h",
+    ] + [
+        "//tensorflow/contrib/resource_management:gpu_resource_management.cc",
+        "//tensorflow/contrib/resource_management:file_listener.cc",
+        "//tensorflow/contrib/resource_management:gpu_usage_adjustment.cc",
     ],
     hdrs = [
         "//tensorflow/contrib/resource_management:gpu_resource_management.h",
