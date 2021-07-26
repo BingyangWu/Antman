@@ -99,7 +99,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         strip_prefix = "mklml_lnx_2019.0.5.20190502",
         urls = [
             "https://storage.googleapis.com/mirror.tensorflow.org/github.com/intel/mkl-dnn/releases/download/v0.20-rc/mklml_lnx_2019.0.5.20190502.tgz",
-            "https://github.com/intel/mkl-dnn/releases/download/v0.20-rc/mklml_lnx_2019.0.5.20190502.tgz",
+            "https://github.com.cnpmjs.org/intel/mkl-dnn/releases/download/v0.20-rc/mklml_lnx_2019.0.5.20190502.tgz",
         ],
     )
     mkl_repository(
@@ -109,7 +109,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         strip_prefix = "mklml_win_2019.0.5.20190502",
         urls = [
             "https://storage.googleapis.com/mirror.tensorflow.org/github.com/intel/mkl-dnn/releases/download/v0.20-rc/mklml_win_2019.0.5.20190502.zip",
-            "https://github.com/intel/mkl-dnn/releases/download/v0.20-rc/mklml_win_2019.0.5.20190502.zip",
+            "https://github.com.cnpmjs.org/intel/mkl-dnn/releases/download/v0.20-rc/mklml_win_2019.0.5.20190502.zip",
         ],
     )
     mkl_repository(
@@ -119,7 +119,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         strip_prefix = "mklml_mac_2019.0.5.20190502",
         urls = [
             "https://storage.googleapis.com/mirror.tensorflow.org/github.com/intel/mkl-dnn/releases/download/v0.20-rc/mklml_mac_2019.0.5.20190502.tgz",
-            "https://github.com/intel/mkl-dnn/releases/download/v0.20-rc/mklml_mac_2019.0.5.20190502.tgz",
+            "https://github.com.cnpmjs.org/intel/mkl-dnn/releases/download/v0.20-rc/mklml_mac_2019.0.5.20190502.tgz",
         ],
     )
 
@@ -139,7 +139,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         strip_prefix = "mkl-dnn-0.20.6",
         urls = [
             "https://storage.googleapis.com/mirror.tensorflow.org/github.com/intel/mkl-dnn/archive/v0.20.6.tar.gz",
-            "https://github.com/intel/mkl-dnn/archive/v0.20.6.tar.gz",
+            "https://github.com.cnpmjs.org/intel/mkl-dnn/archive/v0.20.6.tar.gz",
         ],
     )
 
@@ -150,7 +150,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         strip_prefix = "mkl-dnn-1.0-pc2",
         urls = [
             "https://storage.googleapis.com/mirror.tensorflow.org/github.com/intel/mkl-dnn/archive/v1.0-pc2.tar.gz",
-            "https://github.com/intel/mkl-dnn/archive/v1.0-pc2.tar.gz",
+            "https://github.com.cnpmjs.org/intel/mkl-dnn/archive/v1.0-pc2.tar.gz",
         ],
     )
 
@@ -161,7 +161,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         strip_prefix = "abseil-cpp-43ef2148c0936ebf7cb4be6b19927a9d9d145b8f",
         urls = [
             "https://storage.googleapis.com/mirror.tensorflow.org/github.com/abseil/abseil-cpp/archive/43ef2148c0936ebf7cb4be6b19927a9d9d145b8f.tar.gz",
-            "https://github.com/abseil/abseil-cpp/archive/43ef2148c0936ebf7cb4be6b19927a9d9d145b8f.tar.gz",
+            "https://github.com.cnpmjs.org/abseil/abseil-cpp/archive/43ef2148c0936ebf7cb4be6b19927a9d9d145b8f.tar.gz",
         ],
     )
 
@@ -184,7 +184,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         strip_prefix = "rpi-newer-crosstools-eb68350c5c8ec1663b7fe52c742ac4271e3217c5/x64-gcc-6.5.0/arm-rpi-linux-gnueabihf/",
         urls = [
             "https://storage.googleapis.com/mirror.tensorflow.org/github.com/rvagg/rpi-newer-crosstools/archive/eb68350c5c8ec1663b7fe52c742ac4271e3217c5.tar.gz",
-            "https://github.com/rvagg/rpi-newer-crosstools/archive/eb68350c5c8ec1663b7fe52c742ac4271e3217c5.tar.gz",
+            "https://github.com.cnpmjs.org/rvagg/rpi-newer-crosstools/archive/eb68350c5c8ec1663b7fe52c742ac4271e3217c5.tar.gz",
         ],
     )
 
@@ -195,7 +195,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         strip_prefix = "libxsmm-1.11",
         urls = [
             "https://storage.googleapis.com/mirror.tensorflow.org/github.com/hfp/libxsmm/archive/1.11.tar.gz",
-            "https://github.com/hfp/libxsmm/archive/1.11.tar.gz",
+            "https://github.com.cnpmjs.org/hfp/libxsmm/archive/1.11.tar.gz",
         ],
     )
 
@@ -206,7 +206,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         system_build_file = clean_dep("//third_party/systemlibs:re2.BUILD"),
         urls = [
             "https://storage.googleapis.com/mirror.tensorflow.org/github.com/google/re2/archive/506cfa4bffd060c06ec338ce50ea3468daa6c814.tar.gz",
-            "https://github.com/google/re2/archive/506cfa4bffd060c06ec338ce50ea3468daa6c814.tar.gz",
+            "https://github.com.cnpmjs.org/google/re2/archive/506cfa4bffd060c06ec338ce50ea3468daa6c814.tar.gz",
         ],
     )
 
@@ -220,7 +220,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         },
         urls = [
             "https://storage.googleapis.com/mirror.tensorflow.org/github.com/googleapis/google-cloud-cpp/archive/v0.10.0.tar.gz",
-            "https://github.com/googleapis/google-cloud-cpp/archive/v0.10.0.tar.gz",
+            "https://github.com.cnpmjs.org/googleapis/google-cloud-cpp/archive/v0.10.0.tar.gz",
         ],
     )
 
@@ -232,7 +232,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         system_build_file = clean_dep("//third_party/systemlibs:googleapis.BUILD"),
         urls = [
             "https://storage.googleapis.com/mirror.tensorflow.org/github.com/googleapis/googleapis/archive/f81082ea1e2f85c43649bee26e0d9871d4b41cdb.zip",
-            "https://github.com/googleapis/googleapis/archive/f81082ea1e2f85c43649bee26e0d9871d4b41cdb.zip",
+            "https://github.com.cnpmjs.org/googleapis/googleapis/archive/f81082ea1e2f85c43649bee26e0d9871d4b41cdb.zip",
         ],
     )
 
@@ -242,7 +242,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         strip_prefix = "gemmlowp-12fed0cd7cfcd9e169bf1925bc3a7a58725fdcc3",
         urls = [
             "https://storage.googleapis.com/mirror.tensorflow.org/github.com/google/gemmlowp/archive/12fed0cd7cfcd9e169bf1925bc3a7a58725fdcc3.zip",
-            "https://github.com/google/gemmlowp/archive/12fed0cd7cfcd9e169bf1925bc3a7a58725fdcc3.zip",
+            "https://github.com.cnpmjs.org/google/gemmlowp/archive/12fed0cd7cfcd9e169bf1925bc3a7a58725fdcc3.zip",
         ],
     )
 
@@ -253,7 +253,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         strip_prefix = "farmhash-816a4ae622e964763ca0862d9dbd19324a1eaf45",
         urls = [
             "https://storage.googleapis.com/mirror.tensorflow.org/github.com/google/farmhash/archive/816a4ae622e964763ca0862d9dbd19324a1eaf45.tar.gz",
-            "https://github.com/google/farmhash/archive/816a4ae622e964763ca0862d9dbd19324a1eaf45.tar.gz",
+            "https://github.com.cnpmjs.org/google/farmhash/archive/816a4ae622e964763ca0862d9dbd19324a1eaf45.tar.gz",
         ],
     )
 
@@ -266,7 +266,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         system_build_file = clean_dep("//third_party/systemlibs:png.BUILD"),
         urls = [
             "https://storage.googleapis.com/mirror.tensorflow.org/github.com/glennrp/libpng/archive/v1.6.37.tar.gz",
-            "https://github.com/glennrp/libpng/archive/v1.6.37.tar.gz",
+            "https://github.com.cnpmjs.org/glennrp/libpng/archive/v1.6.37.tar.gz",
         ],
     )
 
@@ -378,7 +378,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         },
         urls = [
             "https://storage.googleapis.com/mirror.tensorflow.org/github.com/abseil/abseil-py/archive/pypi-v0.7.1.tar.gz",
-            "https://github.com/abseil/abseil-py/archive/pypi-v0.7.1.tar.gz",
+            "https://github.com.cnpmjs.org/abseil/abseil-py/archive/pypi-v0.7.1.tar.gz",
         ],
     )
 
@@ -419,7 +419,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
     # 310ba5ee72661c081129eb878c1bbcec936b20f0 is based on 3.8.0 with a fix for protobuf.bzl.
     PROTOBUF_URLS = [
         "https://storage.googleapis.com/mirror.tensorflow.org/github.com/protocolbuffers/protobuf/archive/310ba5ee72661c081129eb878c1bbcec936b20f0.tar.gz",
-        "https://github.com/protocolbuffers/protobuf/archive/310ba5ee72661c081129eb878c1bbcec936b20f0.tar.gz",
+        "https://github.com.cnpmjs.org/protocolbuffers/protobuf/archive/310ba5ee72661c081129eb878c1bbcec936b20f0.tar.gz",
     ]
     PROTOBUF_SHA256 = "b9e92f9af8819bbbc514e2902aec860415b70209f31dfc8c4fa72515a5df9d59"
     PROTOBUF_STRIP_PREFIX = "protobuf-310ba5ee72661c081129eb878c1bbcec936b20f0"
@@ -447,7 +447,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         system_build_file = clean_dep("//third_party/systemlibs:nsync.BUILD"),
         urls = [
             "https://storage.googleapis.com/mirror.tensorflow.org/github.com/google/nsync/archive/1.22.0.tar.gz",
-            "https://github.com/google/nsync/archive/1.22.0.tar.gz",
+            "https://github.com.cnpmjs.org/google/nsync/archive/1.22.0.tar.gz",
         ],
     )
 
@@ -457,7 +457,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         strip_prefix = "googletest-b6cd405286ed8635ece71c72f118e659f4ade3fb",
         urls = [
             "https://storage.googleapis.com/mirror.tensorflow.org/github.com/google/googletest/archive/b6cd405286ed8635ece71c72f118e659f4ade3fb.zip",
-            "https://github.com/google/googletest/archive/b6cd405286ed8635ece71c72f118e659f4ade3fb.zip",
+            "https://github.com.cnpmjs.org/google/googletest/archive/b6cd405286ed8635ece71c72f118e659f4ade3fb.zip",
         ],
     )
 
@@ -467,7 +467,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         strip_prefix = "gflags-2.2.1",
         urls = [
             "https://storage.googleapis.com/mirror.tensorflow.org/github.com/gflags/gflags/archive/v2.2.1.tar.gz",
-            "https://github.com/gflags/gflags/archive/v2.2.1.tar.gz",
+            "https://github.com.cnpmjs.org/gflags/gflags/archive/v2.2.1.tar.gz",
         ],
     )
 
@@ -516,7 +516,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         system_build_file = clean_dep("//third_party/systemlibs:grpc.BUILD"),
         urls = [
             "https://storage.googleapis.com/mirror.tensorflow.org/github.com/grpc/grpc/archive/4566c2a29ebec0835643b972eb99f4306c4234a3.tar.gz",
-            "https://github.com/grpc/grpc/archive/4566c2a29ebec0835643b972eb99f4306c4234a3.tar.gz",
+            "https://github.com.cnpmjs.org/grpc/grpc/archive/4566c2a29ebec0835643b972eb99f4306c4234a3.tar.gz",
         ],
     )
 
@@ -527,7 +527,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         strip_prefix = "nanopb-f8ac463766281625ad710900479130c7fcb4d63b",
         urls = [
             "https://storage.googleapis.com/mirror.tensorflow.org/github.com/nanopb/nanopb/archive/f8ac463766281625ad710900479130c7fcb4d63b.tar.gz",
-            "https://github.com/nanopb/nanopb/archive/f8ac463766281625ad710900479130c7fcb4d63b.tar.gz",
+            "https://github.com.cnpmjs.org/nanopb/nanopb/archive/f8ac463766281625ad710900479130c7fcb4d63b.tar.gz",
         ],
     )
 
@@ -538,7 +538,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         strip_prefix = "linenoise-c894b9e59f02203dbe4e2be657572cf88c4230c3",
         urls = [
             "https://storage.googleapis.com/mirror.tensorflow.org/github.com/antirez/linenoise/archive/c894b9e59f02203dbe4e2be657572cf88c4230c3.tar.gz",
-            "https://github.com/antirez/linenoise/archive/c894b9e59f02203dbe4e2be657572cf88c4230c3.tar.gz",
+            "https://github.com.cnpmjs.org/antirez/linenoise/archive/c894b9e59f02203dbe4e2be657572cf88c4230c3.tar.gz",
         ],
     )
 
@@ -551,7 +551,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         strip_prefix = "llvm-7a7e03f906aada0cf4b749b51213fe5784eeff84",
         urls = [
             "https://mirror.bazel.build/github.com/llvm-mirror/llvm/archive/7a7e03f906aada0cf4b749b51213fe5784eeff84.tar.gz",
-            "https://github.com/llvm-mirror/llvm/archive/7a7e03f906aada0cf4b749b51213fe5784eeff84.tar.gz",
+            "https://github.com.cnpmjs.org/llvm-mirror/llvm/archive/7a7e03f906aada0cf4b749b51213fe5784eeff84.tar.gz",
         ],
     )
 
@@ -563,7 +563,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         system_build_file = clean_dep("//third_party/systemlibs:lmdb.BUILD"),
         urls = [
             "https://storage.googleapis.com/mirror.tensorflow.org/github.com/LMDB/lmdb/archive/LMDB_0.9.22.tar.gz",
-            "https://github.com/LMDB/lmdb/archive/LMDB_0.9.22.tar.gz",
+            "https://github.com.cnpmjs.org/LMDB/lmdb/archive/LMDB_0.9.22.tar.gz",
         ],
     )
 
@@ -575,7 +575,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         system_build_file = clean_dep("//third_party/systemlibs:jsoncpp.BUILD"),
         urls = [
             "https://storage.googleapis.com/mirror.tensorflow.org/github.com/open-source-parsers/jsoncpp/archive/1.8.4.tar.gz",
-            "https://github.com/open-source-parsers/jsoncpp/archive/1.8.4.tar.gz",
+            "https://github.com.cnpmjs.org/open-source-parsers/jsoncpp/archive/1.8.4.tar.gz",
         ],
     )
 
@@ -586,7 +586,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         system_build_file = clean_dep("//third_party/systemlibs:boringssl.BUILD"),
         urls = [
             "https://storage.googleapis.com/mirror.tensorflow.org/github.com/google/boringssl/archive/7f634429a04abc48e2eb041c81c5235816c96514.tar.gz",
-            "https://github.com/google/boringssl/archive/7f634429a04abc48e2eb041c81c5235816c96514.tar.gz",
+            "https://github.com.cnpmjs.org/google/boringssl/archive/7f634429a04abc48e2eb041c81c5235816c96514.tar.gz",
         ],
     )
 
@@ -620,7 +620,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         system_build_file = clean_dep("//third_party/systemlibs:snappy.BUILD"),
         urls = [
             "https://storage.googleapis.com/mirror.tensorflow.org/github.com/google/snappy/archive/1.1.7.tar.gz",
-            "https://github.com/google/snappy/archive/1.1.7.tar.gz",
+            "https://github.com.cnpmjs.org/google/snappy/archive/1.1.7.tar.gz",
         ],
     )
 
@@ -632,7 +632,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         strip_prefix = "nccl-0ceaec9cee96ae7658aa45686853286651f36384",
         urls = [
             "https://storage.googleapis.com/mirror.tensorflow.org/github.com/nvidia/nccl/archive/0ceaec9cee96ae7658aa45686853286651f36384.tar.gz",
-            "https://github.com/nvidia/nccl/archive/0ceaec9cee96ae7658aa45686853286651f36384.tar.gz",
+            "https://github.com.cnpmjs.org/nvidia/nccl/archive/0ceaec9cee96ae7658aa45686853286651f36384.tar.gz",
         ],
     )
 
@@ -644,7 +644,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         strip_prefix = "librdkafka-0.11.5",
         urls = [
             "https://storage.googleapis.com/mirror.tensorflow.org/github.com/edenhill/librdkafka/archive/v0.11.5.tar.gz",
-            "https://github.com/edenhill/librdkafka/archive/v0.11.5.tar.gz",
+            "https://github.com.cnpmjs.org/edenhill/librdkafka/archive/v0.11.5.tar.gz",
         ],
     )
 
@@ -724,7 +724,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         strip_prefix = "pprof-c0fb62ec88c411cc91194465e54db2632845b650",
         urls = [
             "https://storage.googleapis.com/mirror.tensorflow.org/github.com/google/pprof/archive/c0fb62ec88c411cc91194465e54db2632845b650.tar.gz",
-            "https://github.com/google/pprof/archive/c0fb62ec88c411cc91194465e54db2632845b650.tar.gz",
+            "https://github.com.cnpmjs.org/google/pprof/archive/c0fb62ec88c411cc91194465e54db2632845b650.tar.gz",
         ],
     )
 
@@ -735,7 +735,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         strip_prefix = "cub-1.8.0",
         urls = [
             "https://storage.googleapis.com/mirror.tensorflow.org/github.com/NVlabs/cub/archive/1.8.0.zip",
-            "https://github.com/NVlabs/cub/archive/1.8.0.zip",
+            "https://github.com.cnpmjs.org/NVlabs/cub/archive/1.8.0.zip",
         ],
     )
 
@@ -746,7 +746,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         strip_prefix = "rocPRIM-4a33d328f8352df1654271939da66914f2334424",
         urls = [
             "https://mirror.bazel.build/github.com/ROCmSoftwarePlatform/rocPRIM/archive/4a33d328f8352df1654271939da66914f2334424.tar.gz",
-            "https://github.com/ROCmSoftwarePlatform/rocPRIM/archive/4a33d328f8352df1654271939da66914f2334424.tar.gz",
+            "https://github.com.cnpmjs.org/ROCmSoftwarePlatform/rocPRIM/archive/4a33d328f8352df1654271939da66914f2334424.tar.gz",
         ],
     )
 
@@ -759,7 +759,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         system_build_file = clean_dep("//third_party/systemlibs:cython.BUILD"),
         urls = [
             "https://storage.googleapis.com/mirror.tensorflow.org/github.com/cython/cython/archive/0.28.4.tar.gz",
-            "https://github.com/cython/cython/archive/0.28.4.tar.gz",
+            "https://github.com.cnpmjs.org/cython/cython/archive/0.28.4.tar.gz",
         ],
     )
 
@@ -770,7 +770,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         strip_prefix = "ARM_NEON_2_x86_SSE-1200fe90bb174a6224a525ee60148671a786a71f",
         urls = [
             "https://storage.googleapis.com/mirror.tensorflow.org/github.com/intel/ARM_NEON_2_x86_SSE/archive/1200fe90bb174a6224a525ee60148671a786a71f.tar.gz",
-            "https://github.com/intel/ARM_NEON_2_x86_SSE/archive/1200fe90bb174a6224a525ee60148671a786a71f.tar.gz",
+            "https://github.com.cnpmjs.org/intel/ARM_NEON_2_x86_SSE/archive/1200fe90bb174a6224a525ee60148671a786a71f.tar.gz",
         ],
     )
 
@@ -782,7 +782,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         system_build_file = clean_dep("//third_party/systemlibs:double_conversion.BUILD"),
         urls = [
             "https://storage.googleapis.com/mirror.tensorflow.org/github.com/google/double-conversion/archive/3992066a95b823efc8ccc1baf82a1cfc73f6e9b8.zip",
-            "https://github.com/google/double-conversion/archive/3992066a95b823efc8ccc1baf82a1cfc73f6e9b8.zip",
+            "https://github.com.cnpmjs.org/google/double-conversion/archive/3992066a95b823efc8ccc1baf82a1cfc73f6e9b8.zip",
         ],
     )
 
@@ -874,7 +874,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         strip_prefix = "rules_android-0.1.1",
         urls = [
             "https://storage.googleapis.com/mirror.tensorflow.org/github.com/bazelbuild/rules_android/archive/v0.1.1.zip",
-            "https://github.com/bazelbuild/rules_android/archive/v0.1.1.zip",
+            "https://github.com.cnpmjs.org/bazelbuild/rules_android/archive/v0.1.1.zip",
         ],
     )
 
@@ -885,7 +885,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         strip_prefix = "tbb-2019_U1",
         urls = [
             "https://storage.googleapis.com/mirror.tensorflow.org/github.com/01org/tbb/archive/2019_U1.zip",
-            "https://github.com/01org/tbb/archive/2019_U1.zip",
+            "https://github.com.cnpmjs.org/01org/tbb/archive/2019_U1.zip",
         ],
     )
 
@@ -896,7 +896,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         strip_prefix = "ngraph-0.11.0",
         urls = [
             "https://storage.googleapis.com/mirror.tensorflow.org/github.com/NervanaSystems/ngraph/archive/v0.11.0.tar.gz",
-            "https://github.com/NervanaSystems/ngraph/archive/v0.11.0.tar.gz",
+            "https://github.com.cnpmjs.org/NervanaSystems/ngraph/archive/v0.11.0.tar.gz",
         ],
     )
 
@@ -907,7 +907,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         strip_prefix = "json-3.4.0",
         urls = [
             "https://storage.googleapis.com/mirror.tensorflow.org/github.com/nlohmann/json/archive/v3.4.0.tar.gz",
-            "https://github.com/nlohmann/json/archive/v3.4.0.tar.gz",
+            "https://github.com.cnpmjs.org/nlohmann/json/archive/v3.4.0.tar.gz",
         ],
     )
 
@@ -918,7 +918,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         strip_prefix = "ngraph-tf-0.9.0",
         urls = [
             "https://storage.googleapis.com/mirror.tensorflow.org/github.com/NervanaSystems/ngraph-tf/archive/v0.9.0.zip",
-            "https://github.com/NervanaSystems/ngraph-tf/archive/v0.9.0.zip",
+            "https://github.com.cnpmjs.org/NervanaSystems/ngraph-tf/archive/v0.9.0.zip",
         ],
     )
 
@@ -926,7 +926,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         name = "pybind11",
         urls = [
             "https://mirror.bazel.build/github.com/pybind/pybind11/archive/v2.3.0.tar.gz",
-            "https://github.com/pybind/pybind11/archive/v2.3.0.tar.gz",
+            "https://github.com.cnpmjs.org/pybind/pybind11/archive/v2.3.0.tar.gz",
         ],
         sha256 = "0f34838f2c8024a6765168227ba587b3687729ebf03dc912f88ff75c7aa9cfe8",
         strip_prefix = "pybind11-2.3.0",
@@ -941,7 +941,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         system_build_file = clean_dep("//third_party/systemlibs:wrapt.BUILD"),
         urls = [
             "https://storage.googleapis.com/mirror.tensorflow.org/github.com/GrahamDumpleton/wrapt/archive/1.11.1.tar.gz",
-            "https://github.com/GrahamDumpleton/wrapt/archive/1.11.1.tar.gz",
+            "https://github.com.cnpmjs.org/GrahamDumpleton/wrapt/archive/1.11.1.tar.gz",
         ],
     )
 

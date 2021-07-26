@@ -91,7 +91,7 @@ void CheckOffsetsInKernelParams8bit(const Params&) {
 
 // Fast-int8-trick kernel, similar to this production gemmlowp kernel:
 // NEON_64bit_GEMM_Int8Operands_AccumTwoWithin16Bits
-// https://github.com/google/gemmlowp/blob/36212ad3651871bc3e9a599f1a6d5324778aea25/standalone/neon-gemm-kernel-benchmark.cc#L2296
+// https://github.com.cnpmjs.org/google/gemmlowp/blob/36212ad3651871bc3e9a599f1a6d5324778aea25/standalone/neon-gemm-kernel-benchmark.cc#L2296
 //
 // Relevant target CPUs for this kernel include ARM Cortex-A73 and Cortex-A75,
 // since these are 64-bit, out-of-order and without dotprod support.
@@ -1113,7 +1113,7 @@ void Kernel8bitNeonOutOfOrder(const KernelParams8bit<4, 4>& params) {
 // developed based on insights that David Mansell at ARM shared with their
 // contribution of gemmlowp kernels tuned for Cortex-A53, with very helpful
 // comments. Specifically, see this comment about tuning for Cortex-A53:
-// https://github.com/google/gemmlowp/blob/36212ad3651871bc3e9a599f1a6d5324778aea25/standalone/neon-gemm-kernel-benchmark.cc#L4215
+// https://github.com.cnpmjs.org/google/gemmlowp/blob/36212ad3651871bc3e9a599f1a6d5324778aea25/standalone/neon-gemm-kernel-benchmark.cc#L4215
 void Kernel8bitNeonInOrder(const KernelParams8bit<4, 4>& params) {
   gemmlowp::ScopedProfilingLabel label(
       "Kernel (kNeon, optimized for in-order cores)");
@@ -2191,7 +2191,7 @@ void Kernel8bitNeonInOrder(const KernelParams8bit<4, 4>& params) {
 // This is very similar to (and directly inspired by) this gemmlowp kernel
 // which was contributed by David Mansell at ARM:
 // NEON_64bit_GEMM_Uint8Operands_Uint32Accumulators_dotproduct
-// https://github.com/google/gemmlowp/blob/36212ad3651871bc3e9a599f1a6d5324778aea25/standalone/neon-gemm-kernel-benchmark.cc#L3391
+// https://github.com.cnpmjs.org/google/gemmlowp/blob/36212ad3651871bc3e9a599f1a6d5324778aea25/standalone/neon-gemm-kernel-benchmark.cc#L3391
 //
 // Besides the ruy-ification, the main difference here is that we use a 8x8
 // instead of 12x8 width, so as to stick to power-of-two widths. This slightly
@@ -3553,7 +3553,7 @@ void Kernel8bitNeonDotprodOutOfOrder(const KernelParams8bit<8, 8>& params) {
 // developed based on insights that David Mansell at ARM shared with their
 // contribution of gemmlowp kernels tuned for Cortex-A55r1, with very helpful
 // comments. Specifically, see this comment about tuning for Cortex-A55r1:
-// https://github.com/google/gemmlowp/blob/36212ad3651871bc3e9a599f1a6d5324778aea25/standalone/neon-gemm-kernel-benchmark.cc#L4412
+// https://github.com.cnpmjs.org/google/gemmlowp/blob/36212ad3651871bc3e9a599f1a6d5324778aea25/standalone/neon-gemm-kernel-benchmark.cc#L4412
 void Kernel8bitNeonDotprodInOrder(const KernelParams8bit<8, 8>& params) {
   gemmlowp::ScopedProfilingLabel label(
       "Kernel (kNeonDotprod, optimized for in-order cores)");
@@ -4806,7 +4806,7 @@ void CheckOffsetsInKernelParamsFloat(const Params&) {
 // Just a plain float kernel; good enough for out-of-order cores.
 // The closest to it in the gemmlowp collection would be
 // NEON_64bit_GEMM_Float32_WithScalar,
-// https://github.com/google/gemmlowp/blob/36212ad3651871bc3e9a599f1a6d5324778aea25/standalone/neon-gemm-kernel-benchmark.cc#L3925
+// https://github.com.cnpmjs.org/google/gemmlowp/blob/36212ad3651871bc3e9a599f1a6d5324778aea25/standalone/neon-gemm-kernel-benchmark.cc#L3925
 //
 // Besides ruy-ification, the main nuance here is that we stick to a 8x8
 // width instead of the wider 12x8 that the register space permits and that
@@ -5410,7 +5410,7 @@ void KernelFloatNeonOutOfOrder(const KernelParamsFloat<8, 8>& params) {
 // NEON_64bit_GEMM_Float32_WithScalar_A53.
 // which was contributed by David Mansell with very helpful
 // comments. Specifically, see this comment about tuning for Cortex-A53:
-// https://github.com/google/gemmlowp/blob/36212ad3651871bc3e9a599f1a6d5324778aea25/standalone/neon-gemm-kernel-benchmark.cc#L4215
+// https://github.com.cnpmjs.org/google/gemmlowp/blob/36212ad3651871bc3e9a599f1a6d5324778aea25/standalone/neon-gemm-kernel-benchmark.cc#L4215
 void KernelFloatNeonInOrder(const KernelParamsFloat<8, 8>& params) {
   gemmlowp::ScopedProfilingLabel label(
       "Kernel (kNeon, optimized for in-order cores)");
@@ -5856,7 +5856,7 @@ void KernelFloatNeonInOrder(const KernelParamsFloat<8, 8>& params) {
 // NEON_64bit_GEMM_Float32_WithScalar_A55r1.
 // which was contributed by David Mansell with very helpful
 // comments. Specifically, see this comment about tuning for Cortex-A55r1:
-// https://github.com/google/gemmlowp/blob/36212ad3651871bc3e9a599f1a6d5324778aea25/standalone/neon-gemm-kernel-benchmark.cc#L4412
+// https://github.com.cnpmjs.org/google/gemmlowp/blob/36212ad3651871bc3e9a599f1a6d5324778aea25/standalone/neon-gemm-kernel-benchmark.cc#L4412
 void KernelFloatNeonDotprodInOrder(const KernelParamsFloat<8, 8>& params) {
   gemmlowp::ScopedProfilingLabel label(
       "Kernel (kNeonDotprod, optimized for in-order cores)");

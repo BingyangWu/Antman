@@ -3,8 +3,8 @@ Pod::Spec.new do |s|
   s.version          = '1.14.0'
   s.authors          = 'Google Inc.'
   s.license          = { :type => 'Apache' }
-  s.homepage         = 'https://github.com/tensorflow/tensorflow'
-  s.source           = { :git => 'https://github.com/tensorflow/tensorflow.git', :tag => "v#{s.version}" }
+  s.homepage         = 'https://github.com.cnpmjs.org/tensorflow/tensorflow'
+  s.source           = { :git => 'https://github.com.cnpmjs.org/tensorflow/tensorflow.git', :tag => "v#{s.version}" }
   s.summary          = 'TensorFlow Lite for Swift'
   s.description      = <<-DESC
 

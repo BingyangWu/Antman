@@ -18,7 +18,7 @@ Reference [Generalizing Hamiltonian Monte Carlo with Neural
 Networks](https://arxiv.org/pdf/1711.09268.pdf)
 
 Code adapted from the released TensorFlow graph implementation by original
-authors https://github.com/brain-research/l2hmc.
+authors https://github.com.cnpmjs.org/brain-research/l2hmc.
 """
 from __future__ import absolute_import
 from __future__ import division

@@ -40,7 +40,7 @@ deploying the code to the above microcontroller platforms and macOS.
 ### Build the tests
 
 To compile and test this example on a desktop Linux or macOS machine, download
-[the TensorFlow source code](https://github.com/tensorflow/tensorflow), `cd`
+[the TensorFlow source code](https://github.com.cnpmjs.org/tensorflow/tensorflow), `cd`
 into the source directory from a terminal, and then run the following command:
 
 ```
@@ -58,7 +58,7 @@ the trained TensorFlow model, runs some example inputs through it, and got the
 expected outputs.
 
 To understand how TensorFlow Lite does this, you can look at the source in
-[hello_world_test.cc](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/experimental/micro/examples/micro_speech/micro_speech_test.cc).
+[hello_world_test.cc](https://github.com.cnpmjs.org/tensorflow/tensorflow/tree/master/tensorflow/lite/experimental/micro/examples/micro_speech/micro_speech_test.cc).
 It's a fairly small amount of code that creates an interpreter, gets a handle to
 a model that's been compiled into the program, and then invokes the interpreter
 with the model and sample inputs.
@@ -339,7 +339,7 @@ followed by the `K` key, then hit the `Y` key.
 
 The following instructions will help you build and deploy the sample to the
 [STM32F7 discovery kit](https://os.mbed.com/platforms/ST-Discovery-F746NG/)
-using [ARM Mbed](https://github.com/ARMmbed/mbed-cli).
+using [ARM Mbed](https://github.com.cnpmjs.org/ARMmbed/mbed-cli).
 
 Before we begin, you'll need the following:
 
@@ -443,9 +443,9 @@ followed by the `K` key, then hit the `Y` key.
 
 The following instructions will help you build and deploy the sample to the
 [NXP FRDM K66F](https://www.nxp.com/design/development-boards/freedom-development-boards/mcu-boards/freedom-development-platform-for-kinetis-k66-k65-and-k26-mcus:FRDM-K66F)
-using [ARM Mbed](https://github.com/ARMmbed/mbed-cli).
+using [ARM Mbed](https://github.com.cnpmjs.org/ARMmbed/mbed-cli).
 
-1.  Download [the TensorFlow source code](https://github.com/tensorflow/tensorflow).
+1.  Download [the TensorFlow source code](https://github.com.cnpmjs.org/tensorflow/tensorflow).
 2.  Follow instructions from [mbed website](https://os.mbed.com/docs/mbed-os/v5.13/tools/installation-and-setup.html) to setup and install mbed CLI.
 3.  Compile TensorFlow with the following command to generate mbed project:
 
@@ -570,7 +570,7 @@ go
 
 ### Use Google Colaboratory
 
-The easiest way to train your own speech model is by running [`train_speech_model.ipynb`](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/micro/examples/micro_speech/train_speech_model.ipynb)
+The easiest way to train your own speech model is by running [`train_speech_model.ipynb`](https://github.com.cnpmjs.org/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/micro/examples/micro_speech/train_speech_model.ipynb)
 in Google Colaboratory. This avoids the need to install dependencies, and allows
 the use of GPUs for training. Total training time will be 1.5-2hrs.
 

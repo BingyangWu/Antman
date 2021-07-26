@@ -21,7 +21,7 @@ OPENBLAS_INSTALL_PATH="/usr"
 apt-get update
 apt-get install -y gfortran gfortran-5
 rm -rf ${OPENBLAS_SRC_PATH}
-git clone -b release-0.3.0 https://github.com/xianyi/OpenBLAS ${OPENBLAS_SRC_PATH}
+git clone -b release-0.3.0 https://github.com.cnpmjs.org/xianyi/OpenBLAS ${OPENBLAS_SRC_PATH}
 cd ${OPENBLAS_SRC_PATH}
 # Pick up fix for OpenBLAS issue 1571
 git cherry-pick -X theirs 961d25e9c7e4a1758adb1dbeaa15187de69dd052

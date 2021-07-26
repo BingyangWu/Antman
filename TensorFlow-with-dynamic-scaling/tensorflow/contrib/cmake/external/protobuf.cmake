@@ -15,7 +15,7 @@
 include (ExternalProject)
 
 set(PROTOBUF_INCLUDE_DIRS ${CMAKE_CURRENT_BINARY_DIR}/protobuf/src/protobuf/src)
-set(PROTOBUF_URL https://github.com/google/protobuf.git)
+set(PROTOBUF_URL https://github.com.cnpmjs.org/google/protobuf.git)
 
 # enable choose protobuf versions
 SET(PROTOBUF_VERSION "3.6.1" CACHE STRING "Protobuf version")

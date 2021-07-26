@@ -19,7 +19,7 @@ limitations under the License.
 
 // The Arduino DUE uses a different object for the default serial port shown in
 // the monitor than most other models, so make sure we pick the right one. See
-// https://github.com/arduino/Arduino/issues/3088#issuecomment-406655244
+// https://github.com.cnpmjs.org/arduino/Arduino/issues/3088#issuecomment-406655244
 #if defined(__SAM3X8E__)
 #define DEBUG_SERIAL_OBJECT (SerialUSB)
 #else

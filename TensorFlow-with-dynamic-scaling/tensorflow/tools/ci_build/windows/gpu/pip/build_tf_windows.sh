@@ -104,7 +104,7 @@ done
 
 if [[ "$RELEASE_BUILD" == 1 ]]; then
   # Overriding eigen strong inline speeds up the compiling of conv_grad_ops_3d.cc and conv_ops_3d.cc
-  # by 20 minutes. See https://github.com/tensorflow/tensorflow/issues/10521
+  # by 20 minutes. See https://github.com.cnpmjs.org/tensorflow/tensorflow/issues/10521
   # Because this hurts the performance of TF, we don't override it in release build.
   # TODO(ggadde): Temporarily override for release builds as well to debug failures.
   export TF_OVERRIDE_EIGEN_STRONG_INLINE=1
@@ -167,7 +167,7 @@ TF_GPU_COUNT=${TF_GPU_COUNT:-4}
 # GPU tests are very flaky when running concurrently, so set local_test_jobs=1
 # TODO(pcloudy): remove --experimental_windows_native_test_wrapper once
 # native test wrapper is enabled by default.
-# https://github.com/bazelbuild/bazel/issues/6622
+# https://github.com.cnpmjs.org/bazelbuild/bazel/issues/6622
 bazel test --announce_rc --config=opt -k --test_output=errors \
   --test_env=TF_GPU_COUNT \
   ${EXTRA_TEST_FLAGS} \

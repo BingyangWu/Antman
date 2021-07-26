@@ -37,7 +37,7 @@ constexpr float kPi = 3.14159265358979323846f;
 
 // Performs a discrete Fourier transform on the real inputs. This corresponds to
 // rdft() in the FFT package at http://www.kurims.kyoto-u.ac.jp/~ooura/fft.html,
-// and to kiss_fftr() in KISSFFT at https://github.com/mborgerding/kissfft.
+// and to kiss_fftr() in KISSFFT at https://github.com.cnpmjs.org/mborgerding/kissfft.
 // It takes in an array of float real values, and returns a result of the same
 // length with float real and imaginary components interleaved, so
 // fourier_output[0] is the first real value, fourier_output[1] is the first

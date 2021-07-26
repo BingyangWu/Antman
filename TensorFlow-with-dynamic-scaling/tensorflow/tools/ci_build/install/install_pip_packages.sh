@@ -24,7 +24,7 @@ easy_install -U pip
 # building from source.
 
 # Pin wheel==0.31.1 to work around issue
-# https://github.com/pypa/auditwheel/issues/102
+# https://github.com.cnpmjs.org/pypa/auditwheel/issues/102
 pip2 install wheel==0.31.1
 pip3 install wheel==0.31.1
 
@@ -66,7 +66,7 @@ pip3 install --upgrade protobuf==3.6.1
 rm -rf /usr/lib/python3/dist-packages/six*
 
 # numpy needs to be installed from source to fix segfaults. See:
-# https://github.com/tensorflow/tensorflow/issues/6968
+# https://github.com.cnpmjs.org/tensorflow/tensorflow/issues/6968
 # This workaround isn't needed for Ubuntu 16.04 or later.
 if $(cat /etc/*-release | grep -q 14.04); then
   pip2 install --no-binary=:all: --upgrade numpy==1.14.5

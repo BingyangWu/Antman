@@ -125,8 +125,8 @@ def super_in_original_context(f, args, caller_fn_scope):
   #   https://python-reference.readthedocs.io/en/latest/docs/code/varnames.html
   # - CPython has tests checking that order, which was merged in 2008, and
   #   unchanged since then.
-  #   https://github.com/python/cpython/blame/2f224a077a83ac9de8a12bb7dcc516642b8176d8/Lib/lib2to3/tests/data/py2_test_grammar.py#L157
-  #   https://github.com/python/cpython/blame/2f224a077a83ac9de8a12bb7dcc516642b8176d8/Lib/lib2to3/tests/data/py3_test_grammar.py#L192
+  #   https://github.com.cnpmjs.org/python/cpython/blame/2f224a077a83ac9de8a12bb7dcc516642b8176d8/Lib/lib2to3/tests/data/py2_test_grammar.py#L157
+  #   https://github.com.cnpmjs.org/python/cpython/blame/2f224a077a83ac9de8a12bb7dcc516642b8176d8/Lib/lib2to3/tests/data/py3_test_grammar.py#L192
   #
   # Note: the name can be more reliably obtained by inspecting the calling
   # function's argspec.

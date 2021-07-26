@@ -247,7 +247,7 @@ public final class Session implements AutoCloseable {
      *
      * <p>The org.tensorflow package is free of any protocol buffer dependencies in order to remain
      * friendly to resource constrained systems (where something like <a
-     * href="https://github.com/google/protobuf/tree/master/javanano#nano-version">nanoproto</a> may
+     * href="https://github.com.cnpmjs.org/google/protobuf/tree/master/javanano#nano-version">nanoproto</a> may
      * be more appropriate). A cost of that is this lack of type-safety in this API function. This
      * choice is under review and this function may be replaced by more type-safe equivalents at any
      * time.
@@ -429,7 +429,7 @@ public final class Session implements AutoCloseable {
      * href="https://www.tensorflow.org/code/tensorflow/core/protobuf/config.proto">RunMetadata
      * protocol buffer</a>. The org.tensorflow package is free of any protocol buffer dependencies
      * in order to remain friendly to resource constrained systems (where something like <a
-     * href="https://github.com/google/protobuf/tree/master/javanano#nano-version">nanoproto</a> may
+     * href="https://github.com.cnpmjs.org/google/protobuf/tree/master/javanano#nano-version">nanoproto</a> may
      * be more appropriate). A cost of that is this opaque blob. This choice is under review and
      * this field may be replaced by more type-safe equivalents at any time.
      */

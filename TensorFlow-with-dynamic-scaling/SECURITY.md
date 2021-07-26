@@ -33,7 +33,7 @@ perspective.**
 ## Running untrusted models
 
 As a general rule: **Always** execute untrusted models inside a sandbox (e.g.,
-[nsjail](https://github.com/google/nsjail)).
+[nsjail](https://github.com.cnpmjs.org/google/nsjail)).
 
 There are several ways in which a model could become untrusted. Obviously, if an
 untrusted party supplies TensorFlow kernels, arbitrary code may be executed.
@@ -245,4 +245,4 @@ v//Fw6ZeY+HmRDFdirjD7wXtIuER4vqCryIqR6Xe9X8oJXz9L/Jhslc=
 ### Known Vulnerabilities
 
 For a list of known vulnerabilities and security advisories for TensorFlow,
-[click here](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/security/index.md).
+[click here](https://github.com.cnpmjs.org/tensorflow/tensorflow/blob/master/tensorflow/security/index.md).

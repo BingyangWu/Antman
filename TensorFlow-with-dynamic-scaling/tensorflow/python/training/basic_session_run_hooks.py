@@ -16,7 +16,7 @@
 
 Note that the symbols that are exported to v1 tf.train namespace are also
 exported to v2 in tf.estimator namespace. See
-https://github.com/tensorflow/estimator/blob/master/tensorflow_estimator/python/estimator/hooks/basic_session_run_hooks.py
+https://github.com.cnpmjs.org/tensorflow/estimator/blob/master/tensorflow_estimator/python/estimator/hooks/basic_session_run_hooks.py
 """
 
 from __future__ import absolute_import
@@ -92,7 +92,7 @@ class SecondOrStepTimer(_HookTimer):
   """Timer that triggers at most once every N seconds or once every N steps.
 
   This symbol is also exported to v2 in tf.estimator namespace. See
-  https://github.com/tensorflow/estimator/blob/master/tensorflow_estimator/python/estimator/hooks/basic_session_run_hooks.py
+  https://github.com.cnpmjs.org/tensorflow/estimator/blob/master/tensorflow_estimator/python/estimator/hooks/basic_session_run_hooks.py
   """
 
   def __init__(self, every_secs=None, every_steps=None):
@@ -993,7 +993,7 @@ class ProfilerHook(session_run_hook.SessionRunHook):
   Trace format.
 
   For more information see:
-  https://github.com/catapult-project/catapult/blob/master/tracing/README.md
+  https://github.com.cnpmjs.org/catapult-project/catapult/blob/master/tracing/README.md
   """
 
   def __init__(self,

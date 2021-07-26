@@ -30,7 +30,7 @@ resnet_v1_200       | 1763                 | 32                    | 879        
 
 A comprehensive table with pre-computed receptive field parameters for different
 end-points, input resolutions, and other variants of these networks can be found
-[here](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/receptive_field/RECEPTIVE_FIELD_TABLE.md).
+[here](https://github.com.cnpmjs.org/tensorflow/tensorflow/blob/master/tensorflow/contrib/receptive_field/RECEPTIVE_FIELD_TABLE.md).
 
 ## Basic usage
 
@@ -58,11 +58,11 @@ rf_x, rf_y, eff_stride_x, eff_stride_y, eff_pad_x, eff_pad_y = \
 
 Here's a simple example of computing the receptive field parameters for
 Inception-Resnet-v2. To get this to work, be sure to checkout
-[tensorflow/models](https://github.com/tensorflow/models), so that the Inception
+[tensorflow/models](https://github.com.cnpmjs.org/tensorflow/models), so that the Inception
 models are available to you. This can be done in three simple commands:
 
 ```sh
-git clone https://github.com/tensorflow/models
+git clone https://github.com.cnpmjs.org/tensorflow/models
 cd models/research/slim
 sudo python setup.py install_lib
 ```
@@ -110,7 +110,7 @@ convnets, and gather their receptive fields. We provide a python script which
 does exactly that, available under `python/util/examples/rf_benchmark.py`.
 
 To get this to work, be sure to checkout
-[tensorflow/models](https://github.com/tensorflow/models) (see the 3-command
+[tensorflow/models](https://github.com.cnpmjs.org/tensorflow/models) (see the 3-command
 instructions for this above). Then, simply:
 
 ```sh
@@ -124,7 +124,7 @@ are also written to the file `/tmp/rf_benchmark_results.csv`.
 
 A comprehensive table with pre-computed receptive field parameters for different
 networks can be found
-[here](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/receptive_field/RECEPTIVE_FIELD_TABLE.md).
+[here](https://github.com.cnpmjs.org/tensorflow/tensorflow/blob/master/tensorflow/contrib/receptive_field/RECEPTIVE_FIELD_TABLE.md).
 
 ## Compute RF parameters from a graph pbtxt
 
@@ -133,9 +133,9 @@ from a graph protobuf file.
 
 Have a `graph.pbtxt` file and want to compute its receptive field parameters? We
 got you covered. The only prerequisite is to install
-[google/protobuf](https://github.com/google/protobuf), which you probably
+[google/protobuf](https://github.com.cnpmjs.org/google/protobuf), which you probably
 already have if you're using tensorflow (otherwise, follow installation
-instructions [here](https://github.com/google/protobuf/tree/master/python)).
+instructions [here](https://github.com.cnpmjs.org/google/protobuf/tree/master/python)).
 
 This should work:
 

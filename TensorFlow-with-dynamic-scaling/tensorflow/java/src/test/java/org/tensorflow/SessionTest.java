@@ -168,9 +168,9 @@ public class SessionTest {
     // the Java files for the .proto files in tensorflow/core:protos_all is
     // a bit cumbersome in bazel until the proto_library rule is setup.
     //
-    // See https://github.com/bazelbuild/bazel/issues/52#issuecomment-194341866
-    // https://github.com/bazelbuild/rules_go/pull/121#issuecomment-251515362
-    // https://github.com/bazelbuild/rules_go/pull/121#issuecomment-251692558
+    // See https://github.com.cnpmjs.org/bazelbuild/bazel/issues/52#issuecomment-194341866
+    // https://github.com.cnpmjs.org/bazelbuild/rules_go/pull/121#issuecomment-251515362
+    // https://github.com.cnpmjs.org/bazelbuild/rules_go/pull/121#issuecomment-251692558
     //
     // For this test, for now, the use of specific bytes suffices.
     return new byte[] {0x08, 0x03};
@@ -188,9 +188,9 @@ public class SessionTest {
     // the Java files for the .proto files in tensorflow/core:protos_all is
     // a bit cumbersome in bazel until the proto_library rule is setup.
     //
-    // See https://github.com/bazelbuild/bazel/issues/52#issuecomment-194341866
-    // https://github.com/bazelbuild/rules_go/pull/121#issuecomment-251515362
-    // https://github.com/bazelbuild/rules_go/pull/121#issuecomment-251692558
+    // See https://github.com.cnpmjs.org/bazelbuild/bazel/issues/52#issuecomment-194341866
+    // https://github.com.cnpmjs.org/bazelbuild/rules_go/pull/121#issuecomment-251515362
+    // https://github.com.cnpmjs.org/bazelbuild/rules_go/pull/121#issuecomment-251692558
     //
     // For this test, for now, the use of specific bytes suffices.
     return new byte[] {0x10, 0x01, 0x28, 0x01};

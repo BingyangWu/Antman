@@ -52,7 +52,7 @@ limitations under the License.
 // numeric CPU identifier that could be mapped to a OutOfOrder/InOrder
 // classification given additional information about the CPU.  Such
 // additional information could be obtained by the cpuinfo library,
-//   https://github.com/pytorch/cpuinfo
+//   https://github.com.cnpmjs.org/pytorch/cpuinfo
 // which obtains this information mainly from parsing /proc/cpuinfo.
 // Pros:
 //   * Would remove the need for the relatively expensive nano-benchmark

@@ -271,7 +271,7 @@ class EinsumTest(test.TestCase):
       ['...ik,...jkl,...il->...ij', 'aik,ajkl,ail->aij'],
       ['...', 'abc'],                             # copy
       ['...ca,cd...,d...f,afc->', 'bca,cdb,dbf,afc->'],
-      # Tests based on https://github.com/dask/dask/pull/3412/files
+      # Tests based on https://github.com.cnpmjs.org/dask/dask/pull/3412/files
       ['ab...,bc...->ac...', 'abxy,bcxy->acxy'],
       ['a...a', 'aba'],
       ['a...a', 'aa'],

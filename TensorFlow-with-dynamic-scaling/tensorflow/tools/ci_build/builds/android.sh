@@ -33,7 +33,7 @@ TARGETS+=" //tensorflow/examples/android:tensorflow_demo"
 # :execute, which what TF Lite needs.
 TARGETS+=" //tensorflow/core/common_runtime/eager:execute"
 # Enable sandboxing so that zip archives don't get incorrectly packaged
-# in assets/ dir (see https://github.com/bazelbuild/bazel/issues/2334)
+# in assets/ dir (see https://github.com.cnpmjs.org/bazelbuild/bazel/issues/2334)
 # TODO(gunan): remove extra flags once sandboxing is enabled for all builds.
 bazel --bazelrc=/dev/null build \
     --compilation_mode=opt --cxxopt=-std=c++11 --fat_apk_cpu=x86_64 \

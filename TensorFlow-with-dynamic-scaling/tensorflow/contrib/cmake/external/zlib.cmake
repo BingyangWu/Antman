@@ -28,7 +28,7 @@ else (systemlib_ZLIB)
   include (ExternalProject)
 
   set(zlib_INCLUDE_DIR ${CMAKE_CURRENT_BINARY_DIR}/external/zlib_archive)
-  set(ZLIB_URL https://github.com/madler/zlib)
+  set(ZLIB_URL https://github.com.cnpmjs.org/madler/zlib)
   set(ZLIB_BUILD ${CMAKE_CURRENT_BINARY_DIR}/zlib/src/zlib)
   set(ZLIB_INSTALL ${CMAKE_CURRENT_BINARY_DIR}/zlib/install)
   # Match zlib version in tensorflow/workspace.bzl

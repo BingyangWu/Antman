@@ -31,5 +31,5 @@ END
 Replaces matches of the `pattern` regular expression in `input` with the
 replacement string provided in `rewrite`.
 END
-  description: "It follows the re2 syntax (https://github.com/google/re2/wiki/Syntax)"
+  description: "It follows the re2 syntax (https://github.com.cnpmjs.org/google/re2/wiki/Syntax)"
 }

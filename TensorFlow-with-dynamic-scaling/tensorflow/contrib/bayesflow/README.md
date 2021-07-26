@@ -3,7 +3,7 @@
 `tf.contrib.bayesflow` has moved!
 
 See new code at [github.com/tensorflow/probability](
-https://github.com/tensorflow/probability).
+https://github.com.cnpmjs.org/tensorflow/probability).
 
 Switch imports with:
 

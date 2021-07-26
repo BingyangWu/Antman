@@ -53,7 +53,7 @@ def regex_full_match(input, pattern, name=None):
   Args:
     input: string `Tensor`, the source strings to process.
     pattern: string or scalar string `Tensor`, regular expression to use,
-      see more details at https://github.com/google/re2/wiki/Syntax
+      see more details at https://github.com.cnpmjs.org/google/re2/wiki/Syntax
     name: Name of the op.
 
   Returns:
@@ -85,7 +85,7 @@ def regex_replace(input, pattern, rewrite, replace_global=True, name=None):
   Args:
     input: string `Tensor`, the source strings to process.
     pattern: string or scalar string `Tensor`, regular expression to use,
-      see more details at https://github.com/google/re2/wiki/Syntax
+      see more details at https://github.com.cnpmjs.org/google/re2/wiki/Syntax
     rewrite: string or scalar string `Tensor`, value to use in match
       replacement, supports backslash-escaped digits (\1 to \9) can be to insert
       text matching corresponding parenthesized group.

@@ -155,8 +155,8 @@ class CastOpTest(test.TestCase):
       self._compare(np.inf, np.int64, i8.max, False)
     else:
       # np.float64("np.inf").astype(np.int32) is negative on x86 but positive on ppc64le
-      # Numpy link to relevant discussion - https://github.com/numpy/numpy/issues/9040
-      # Tensorflow link to relevant discussion - https://github.com/tensorflow/tensorflow/issues/9360
+      # Numpy link to relevant discussion - https://github.com.cnpmjs.org/numpy/numpy/issues/9040
+      # Tensorflow link to relevant discussion - https://github.com.cnpmjs.org/tensorflow/tensorflow/issues/9360
       if platform.machine() == "ppc64le" or platform.machine() == "aarch64":
         self._compare(-np.inf, np.int32, i4.min, False)
         self._compare(-np.inf, np.int64, i8.min, False)

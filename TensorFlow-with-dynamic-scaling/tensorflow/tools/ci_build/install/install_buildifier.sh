@@ -16,11 +16,11 @@
 
 set -e
 # Download buildifier.
-wget https://github.com/bazelbuild/buildtools/releases/download/0.4.5/buildifier
+wget https://github.com.cnpmjs.org/bazelbuild/buildtools/releases/download/0.4.5/buildifier
 chmod +x buildifier
 sudo mv buildifier /usr/local/bin/.
 
 # Download buildozer.
-wget https://github.com/bazelbuild/buildtools/releases/download/0.4.5/buildozer
+wget https://github.com.cnpmjs.org/bazelbuild/buildtools/releases/download/0.4.5/buildozer
 chmod +x buildozer
 sudo mv buildozer /usr/local/bin/.

@@ -264,7 +264,7 @@ class AnfTransformer(transformer.Base):
       return node
 
   # Note on code order: These are listed in the same order as the grammar
-  # elements on https://github.com/serge-sans-paille/gast
+  # elements on https://github.com.cnpmjs.org/serge-sans-paille/gast
 
   # FunctionDef, AsyncFunctionDef, and ClassDef should be correct by default.
 

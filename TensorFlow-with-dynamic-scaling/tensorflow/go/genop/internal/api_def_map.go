@@ -116,7 +116,7 @@ func (m *apiDefMap) Get(opname string) (*pb.ApiDef, error) {
 		apidef = new(pb.ApiDef)
 		size   = int(apidefBuf.length)
 		// A []byte backed by C memory.
-		// See: https://github.com/golang/go/wiki/cgo#turning-c-arrays-into-go-slices
+		// See: https://github.com.cnpmjs.org/golang/go/wiki/cgo#turning-c-arrays-into-go-slices
 		data = (*[1 << 30]byte)(unsafe.Pointer(apidefBuf.data))[:size:size]
 		err  = proto.Unmarshal(data, apidef)
 	)

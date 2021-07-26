@@ -22,7 +22,7 @@ set -ex
 
 mkdir -p ${DIR}
 cd ${DIR}
-curl -SsL -O https://github.com/google/protobuf/archive/v${PROTOBUF_VERSION}.tar.gz
+curl -SsL -O https://github.com.cnpmjs.org/google/protobuf/archive/v${PROTOBUF_VERSION}.tar.gz
 tar xzf v${PROTOBUF_VERSION}.tar.gz
 cd $DIR/protobuf-${PROTOBUF_VERSION}
 ./autogen.sh

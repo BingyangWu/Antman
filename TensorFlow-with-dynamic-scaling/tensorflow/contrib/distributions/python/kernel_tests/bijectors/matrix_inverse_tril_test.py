@@ -32,7 +32,7 @@ class MatrixInverseTriLBijectorTest(test.TestCase):
 
   #The inverse of 0 is undefined, as the numbers above the main
   #diagonal must be zero, we zero out these numbers after running inverse.
-  #See: https://github.com/numpy/numpy/issues/11445
+  #See: https://github.com.cnpmjs.org/numpy/numpy/issues/11445
   def _inv(self, x):
     y = np.linalg.inv(x)
     #triu_indices only works on 2d arrays

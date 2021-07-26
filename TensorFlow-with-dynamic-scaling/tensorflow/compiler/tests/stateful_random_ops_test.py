@@ -110,9 +110,9 @@ class StatefulRandomOpsTest(xla_test.XLATestCase, parameterized.TestCase):
     """Tests ThreeFry2x32 conforms to known results.
     """
     # Based on
-    # https://github.com/google/jax/blob/8565a3486adf16beb388b2364c9cd930d7a0d92d/tests/random_test.py#L65-L85
+    # https://github.com.cnpmjs.org/google/jax/blob/8565a3486adf16beb388b2364c9cd930d7a0d92d/tests/random_test.py#L65-L85
     # which is in turn based on
-    # https://github.com/DEShawResearch/Random123-Boost/blob/65e3d874b67aa7b3e02d5ad8306462f52d2079c0/libs/random/test/test_threefry.cpp#L30-L32
+    # https://github.com.cnpmjs.org/DEShawResearch/Random123-Boost/blob/65e3d874b67aa7b3e02d5ad8306462f52d2079c0/libs/random/test/test_threefry.cpp#L30-L32
 
     with ops.device(xla_device_name()):
       g = random.Generator.from_seed(seed=0, alg=random.RNG_ALG_THREEFRY)
@@ -133,7 +133,7 @@ class StatefulRandomOpsTest(xla_test.XLATestCase, parameterized.TestCase):
     """Tests Philox4x32 conforms to known results.
     """
     # Based on
-    # https://github.com/DEShawResearch/Random123-Boost/blob/65e3d874b67aa7b3e02d5ad8306462f52d2079c0/libs/random/test/test_philox.cpp#L50-L52
+    # https://github.com.cnpmjs.org/DEShawResearch/Random123-Boost/blob/65e3d874b67aa7b3e02d5ad8306462f52d2079c0/libs/random/test/test_philox.cpp#L50-L52
 
     with ops.device(xla_device_name()):
       g = random.Generator.from_seed(seed=0, alg=random.RNG_ALG_PHILOX)

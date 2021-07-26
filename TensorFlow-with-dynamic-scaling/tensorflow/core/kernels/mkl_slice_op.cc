@@ -335,7 +335,7 @@ class MklSliceOp : public OpKernel {
                        const gtl::InlinedVector<int64, 4>& size) {
     try {
       // MKL-DNN API usage below is guided by description at:
-      //  https://github.com/01org/mkl-dnn/issues/69
+      //  https://github.com.cnpmjs.org/01org/mkl-dnn/issues/69
       //
       // Relevant part of the description is copied below:
       //

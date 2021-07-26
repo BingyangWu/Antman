@@ -3427,7 +3427,7 @@ class NTMCell(rnn_cell_impl.LayerRNNCell):
     Mark Collier, Joeran Beel
 
     which is in turn based on the source code of:
-    https://github.com/snowkylin/ntm
+    https://github.com.cnpmjs.org/snowkylin/ntm
 
     and of course the original NTM paper:
     Neural Turing Machines

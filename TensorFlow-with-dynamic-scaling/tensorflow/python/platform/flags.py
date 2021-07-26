@@ -13,7 +13,7 @@
 # limitations under the License.
 # ==============================================================================
 
-"""Import router for absl.flags. See https://github.com/abseil/abseil-py."""
+"""Import router for absl.flags. See https://github.com.cnpmjs.org/abseil/abseil-py."""
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function

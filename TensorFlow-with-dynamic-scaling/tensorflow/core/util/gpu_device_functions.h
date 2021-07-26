@@ -40,7 +40,7 @@ limitations under the License.
 namespace tensorflow {
 
 // According to HIP developer guide at
-// https://github.com/ROCm-Developer-Tools/HIP/blob/master/docs/markdown/hip_kernel_language.md#assert
+// https://github.com.cnpmjs.org/ROCm-Developer-Tools/HIP/blob/master/docs/markdown/hip_kernel_language.md#assert
 // assert is not supported by HIP. While we are waiting for assert support in
 // hip kernels, the assert call should be macroed to NOP so that it does not
 // block us from creating a debug build

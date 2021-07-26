@@ -147,7 +147,7 @@ TEST(CAPI, Tensor) {
 void NoOpDeallocator(void* data, size_t, void*) {}
 
 TEST(CAPI, MalformedTensor) {
-  // See https://github.com/tensorflow/tensorflow/issues/7394
+  // See https://github.com.cnpmjs.org/tensorflow/tensorflow/issues/7394
   // num_dims = 0 implies a scalar, so should be backed by at least 4 bytes of
   // data.
   TF_Tensor* t =
@@ -1955,7 +1955,7 @@ class CApiAttributesTest : public ::testing::Test {
 
 // Helper macros for the TF_OperationGetAttr* tests.
 // TODO(ashankar): Use gmock matchers instead?
-// (https://github.com/google/googletest/blob/master/googlemock/docs/CookBook.md#writing-new-parameterized-matchers-quickly)
+// (https://github.com.cnpmjs.org/google/googletest/blob/master/googlemock/docs/CookBook.md#writing-new-parameterized-matchers-quickly)
 // That will require setting up the tensorflow build with gmock.
 #define EXPECT_TF_META(attr_name, expected_list_size, expected_type, \
                        expected_total_size)                          \

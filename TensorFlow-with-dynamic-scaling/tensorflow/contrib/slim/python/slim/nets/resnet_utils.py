@@ -27,7 +27,7 @@ and form of residual unit. This module implements the infrastructure for
 building them. Concrete ResNet units and full ResNet networks are implemented in
 the accompanying resnet_v1.py and resnet_v2.py modules.
 
-Compared to https://github.com/KaimingHe/deep-residual-networks, in the current
+Compared to https://github.com.cnpmjs.org/KaimingHe/deep-residual-networks, in the current
 implementation we subsample the output activations in the last residual unit of
 each block, instead of subsampling the input activations in the first residual
 unit of each block. The two implementations give identical results but our
@@ -230,7 +230,7 @@ def resnet_arg_scope(weight_decay=0.0001,
 
   TODO(gpapan): The batch-normalization related default values above are
     appropriate for use in conjunction with the reference ResNet models
-    released at https://github.com/KaimingHe/deep-residual-networks. When
+    released at https://github.com.cnpmjs.org/KaimingHe/deep-residual-networks. When
     training ResNets from scratch, they might need to be tuned.
 
   Args:
@@ -262,7 +262,7 @@ def resnet_arg_scope(weight_decay=0.0001,
     with arg_scope([layers.batch_norm], **batch_norm_params):
       # The following implies padding='SAME' for pool1, which makes feature
       # alignment easier for dense prediction tasks. This is also used in
-      # https://github.com/facebook/fb.resnet.torch. However the accompanying
+      # https://github.com.cnpmjs.org/facebook/fb.resnet.torch. However the accompanying
       # code of 'Deep Residual Learning for Image Recognition' uses
       # padding='VALID' for pool1. You can switch to that choice by setting
       # tf.contrib.framework.arg_scope([tf.contrib.layers.max_pool2d], padding='VALID').

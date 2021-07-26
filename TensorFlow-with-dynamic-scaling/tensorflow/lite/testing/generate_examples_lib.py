@@ -3351,7 +3351,7 @@ def make_strided_slice_np_style_tests(options):
   make_zip_of_tests(options, test_parameters, build_graph, build_inputs)
 
 
-# For verifying https://github.com/tensorflow/tensorflow/issues/23599
+# For verifying https://github.com.cnpmjs.org/tensorflow/tensorflow/issues/23599
 # TODO(chaomei): refactor the test to cover more cases, like negative stride,
 # negative array index etc.
 @register_make_test_function()

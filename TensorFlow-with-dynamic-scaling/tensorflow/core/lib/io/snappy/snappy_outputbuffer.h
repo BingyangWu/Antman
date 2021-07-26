@@ -26,7 +26,7 @@ limitations under the License.
 namespace tensorflow {
 namespace io {
 
-// Compresses input data using Snappy (https://github.com/google/snappy) and
+// Compresses input data using Snappy (https://github.com.cnpmjs.org/google/snappy) and
 // writes to `file`.
 //
 // The input data is cached in a buffer of size `input_buffer_bytes`. When the

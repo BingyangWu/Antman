@@ -69,7 +69,7 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
   // Configuration values for tiny-yolo-voc. Note that the graph is not included with TensorFlow and
   // must be manually placed in the assets/ directory by the user.
   // Graphs and models downloaded from http://pjreddie.com/darknet/yolo/ may be converted e.g. via
-  // DarkFlow (https://github.com/thtrieu/darkflow). Sample command:
+  // DarkFlow (https://github.com.cnpmjs.org/thtrieu/darkflow). Sample command:
   // ./flow --model cfg/tiny-yolo-voc.cfg --load bin/tiny-yolo-voc.weights --savepb --verbalise
   private static final String YOLO_MODEL_FILE = "file:///android_asset/graph-tiny-yolo-voc.pb";
   private static final int YOLO_INPUT_SIZE = 416;

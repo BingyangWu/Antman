@@ -311,7 +311,7 @@ TensorShape MaybeVectorizeShape(const TensorShape& shape) {
 
 }  // namespace
 
-// Modeled after densehashtable in https://github.com/sparsehash/sparsehash
+// Modeled after densehashtable in https://github.com.cnpmjs.org/sparsehash/sparsehash
 template <class K, class V>
 class MutableDenseHashTable final : public LookupInterface {
  public:

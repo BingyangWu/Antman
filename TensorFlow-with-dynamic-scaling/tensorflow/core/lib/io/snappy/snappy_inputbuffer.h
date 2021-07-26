@@ -28,7 +28,7 @@ namespace tensorflow {
 namespace io {
 
 // An SnappyInputBuffer provides support for reading from a file compressed
-// using snappy (https://github.com/google/snappy).
+// using snappy (https://github.com.cnpmjs.org/google/snappy).
 //
 // A given instance of an SnappyInputBuffer is NOT safe for concurrent use
 // by multiple threads

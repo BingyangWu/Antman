@@ -12,7 +12,7 @@ an integration test.
   within a factor of 2-3x of the optimized implementation.
 - Code should work on CPU and single GPU.
 - Code should run in Python 3.
-- Code should conform to the [Google Python Style Guide](https://github.com/google/styleguide/blob/gh-pages/pyguide.md)
+- Code should conform to the [Google Python Style Guide](https://github.com.cnpmjs.org/google/styleguide/blob/gh-pages/pyguide.md)
 
 
 - Code should follow these guidelines:

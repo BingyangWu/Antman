@@ -48,7 +48,7 @@ Attribution-ShareAlike License and is available at
   https://en.wikipedia.org/wiki/List_of_colors:_N-Z
 
 This example was adapted from
-  https://github.com/random-forests/tensorflow-workshop/tree/master/extras/colorbot
+  https://github.com.cnpmjs.org/random-forests/tensorflow-workshop/tree/master/extras/colorbot
 """
 
 from __future__ import absolute_import

@@ -238,7 +238,7 @@ def cc_proto_library(
     )
 
 # Re-defined protocol buffer rule to bring in the change introduced in commit
-# https://github.com/google/protobuf/commit/294b5758c373cbab4b72f35f4cb62dc1d8332b68
+# https://github.com.cnpmjs.org/google/protobuf/commit/294b5758c373cbab4b72f35f4cb62dc1d8332b68
 # which was not part of a stable protobuf release in 04/2018.
 # TODO(jsimsa): Remove this once the protobuf dependency version is updated
 # to include the above commit.

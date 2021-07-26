@@ -1,5 +1,5 @@
 Compiling instructions here
-https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/experimental/micro
+https://github.com.cnpmjs.org/tensorflow/tensorflow/tree/master/tensorflow/lite/experimental/micro
 
 CONTACT INFORMATION:
 

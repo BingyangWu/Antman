@@ -170,7 +170,7 @@ public final class EagerSession implements ExecutionEnvironment, AutoCloseable {
      *
      * @param value a serialized config proto
      * @see <a
-     *     href="https://github.com/tensorflow/tensorflow/blob/master/tensorflow/core/protobuf/config.proto"/>
+     *     href="https://github.com.cnpmjs.org/tensorflow/tensorflow/blob/master/tensorflow/core/protobuf/config.proto"/>
      */
     public Options config(byte[] value) {
       config = value;

@@ -10,7 +10,7 @@ behavior.
 For example the `ProfilerHook` periodically collects `RunMetadata` after
 `Session.run()` and saves profiling information that can be viewed in a
 neat timeline through a Chromium-based web browser (via
-[about:tracing](chrome://tracing)) or the standalone [Catapult](https://github.com/catapult-project/catapult/blob/master/tracing/README.md) tool.
+[about:tracing](chrome://tracing)) or the standalone [Catapult](https://github.com.cnpmjs.org/catapult-project/catapult/blob/master/tracing/README.md) tool.
 
 ```python
 from tensorflow.contrib.hooks import ProfilerHook

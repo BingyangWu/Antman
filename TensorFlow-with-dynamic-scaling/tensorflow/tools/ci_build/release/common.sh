@@ -71,7 +71,7 @@ function update_bazel_linux {
   mkdir ~/bazel
 
   pushd ~/bazel
-  readable_run wget https://github.com/bazelbuild/bazel/releases/download/"${BAZEL_VERSION}"/bazel-"${BAZEL_VERSION}"-installer-linux-x86_64.sh
+  readable_run wget https://github.com.cnpmjs.org/bazelbuild/bazel/releases/download/"${BAZEL_VERSION}"/bazel-"${BAZEL_VERSION}"-installer-linux-x86_64.sh
   chmod +x bazel-*.sh
   ./bazel-"${BAZEL_VERSION}"-installer-linux-x86_64.sh --user
   rm bazel-"${BAZEL_VERSION}"-installer-linux-x86_64.sh
@@ -93,7 +93,7 @@ function update_bazel_macos {
   else
     BAZEL_VERSION=$1
   fi
-  BAZEL_COMMAND="curl -L https://github.com/bazelbuild/bazel/releases/download/${BAZEL_VERSION}/bazel-${BAZEL_VERSION}-installer-darwin-x86_64.sh -O && \
+  BAZEL_COMMAND="curl -L https://github.com.cnpmjs.org/bazelbuild/bazel/releases/download/${BAZEL_VERSION}/bazel-${BAZEL_VERSION}-installer-darwin-x86_64.sh -O && \
   chmod +x bazel-*.sh && ./bazel-${BAZEL_VERSION}-installer-darwin-x86_64.sh --user && \
   rm -f bazel-${BAZEL_VERSION}-installer-darwin-x86_64.sh"
   # If the bazel update fails retry again in 60 seconds.

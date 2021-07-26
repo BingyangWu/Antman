@@ -33,7 +33,7 @@ from tensorflow.contrib.learn.python.learn.datasets import base
 from tensorflow.python.platform import gfile
 from tensorflow.python.util.deprecation import deprecated
 
-DBPEDIA_URL = 'https://github.com/le-scientifique/torchDatasets/raw/master/dbpedia_csv.tar.gz'
+DBPEDIA_URL = 'https://github.com.cnpmjs.org/le-scientifique/torchDatasets/raw/master/dbpedia_csv.tar.gz'
 
 
 @deprecated(None, 'See contrib/learn/README.md')

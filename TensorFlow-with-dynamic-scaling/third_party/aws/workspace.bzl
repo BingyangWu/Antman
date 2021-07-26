@@ -10,7 +10,7 @@ def repo():
         name = "aws",
         urls = [
             "https://storage.googleapis.com/mirror.tensorflow.org/github.com/aws/aws-sdk-cpp/archive/1.5.8.tar.gz",
-            "https://github.com/aws/aws-sdk-cpp/archive/1.5.8.tar.gz",
+            "https://github.com.cnpmjs.org/aws/aws-sdk-cpp/archive/1.5.8.tar.gz",
         ],
         sha256 = "89905075fe50aa13e0337ff905c2e8c1ce9caf77a3504484a7cda39179120ffc",
         strip_prefix = "aws-sdk-cpp-1.5.8",

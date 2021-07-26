@@ -32,8 +32,8 @@ def fwd_gradients(ys, xs, grad_xs=None, assert_unused=False):
   performance should be equal to a manual implementation [citation needed].
 
   See https://j-towns.github.io/2017/06/12/A-new-trick.html and
-  https://github.com/HIPS/autograd/pull/175 for the original discussion of this
-  method, and https://github.com/renmengye/tensorflow-forward-ad for a "direct"
+  https://github.com.cnpmjs.org/HIPS/autograd/pull/175 for the original discussion of this
+  method, and https://github.com.cnpmjs.org/renmengye/tensorflow-forward-ad for a "direct"
   implementation.
 
   Args:

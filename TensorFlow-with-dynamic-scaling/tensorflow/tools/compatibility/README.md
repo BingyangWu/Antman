@@ -73,8 +73,8 @@ keyword arguments to functions that had their arguments reordered.
 script was designed to use only standard python packages.
 If the script fails with "A necessary keyword argument failed to be inserted." or
 "Failed to find keyword lexicographically. Fix manually.", you can try
-[@machrisaa's fork of this script](https://github.com/machrisaa/tf0to1).
-[@machrisaa](https://github.com/machrisaa) has used the
+[@machrisaa's fork of this script](https://github.com.cnpmjs.org/machrisaa/tf0to1).
+[@machrisaa](https://github.com.cnpmjs.org/machrisaa) has used the
 [RedBaron Python refactoring engine](https://redbaron.readthedocs.io/en/latest/)
 which is able to localize syntactic elements more reliably than the built-in
 `ast` module this script is based upon. Note that the alternative script is not

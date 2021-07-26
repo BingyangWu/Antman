@@ -797,7 +797,7 @@ class IndexedSlicesToTensorTest(test_util.TensorFlowTestCase):
   @test_util.run_v1_only("b/120545219")
   def testWarnings(self):
     # TODO(gunan) Reenable after this issue is fixed:
-    # https://github.com/google/protobuf/issues/2812
+    # https://github.com.cnpmjs.org/google/protobuf/issues/2812
     if sys.version_info >= (3, 5):
       self.skipTest("Skipped test for Python 3.5+")
 

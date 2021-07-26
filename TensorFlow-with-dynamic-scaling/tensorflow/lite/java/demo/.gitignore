@@ -1,4 +1,4 @@
-# This file is based on https://github.com/github/gitignore/blob/master/Android.gitignore
+# This file is based on https://github.com.cnpmjs.org/github/gitignore/blob/master/Android.gitignore
 *.iml
 .idea/compiler.xml
 .idea/copyright

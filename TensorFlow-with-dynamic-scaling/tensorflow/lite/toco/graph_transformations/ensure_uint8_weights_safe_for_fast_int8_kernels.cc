@@ -51,7 +51,7 @@ namespace toco {
 // Since March 2017, we have been using a trick to perform faster
 // 8bit matrix multiplications, to our knowledge first implemented in gemmlowp
 // here:
-//   https://github.com/google/gemmlowp/commit/25b2989415b99e797e1ab977837111b2e231f81f
+//   https://github.com.cnpmjs.org/google/gemmlowp/commit/25b2989415b99e797e1ab977837111b2e231f81f
 //
 // This trick is explained in Appendix B of our paper,
 //   https://arxiv.org/abs/1712.05877
@@ -97,7 +97,7 @@ namespace toco {
 // SDOT instruction, renders this eventually moot. See the experimental
 // kernels contributed by ARM here,
 //
-//     https://github.com/google/gemmlowp/pull/116
+//     https://github.com.cnpmjs.org/google/gemmlowp/pull/116
 //
 // However, as of April 2018, there don't seem to be any commercially available
 // CPU supporting these instructions (yet); we are waiting for

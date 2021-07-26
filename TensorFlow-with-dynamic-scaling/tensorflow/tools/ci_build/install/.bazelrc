@@ -1,10 +1,10 @@
 # Running bazel inside a `docker build` command causes trouble, cf:
-#   https://github.com/bazelbuild/bazel/issues/134
+#   https://github.com.cnpmjs.org/bazelbuild/bazel/issues/134
 # The easiest solution is to set up a bazelrc file forcing --batch.
 startup --batch
 
 # Similarly, we need to workaround sandboxing issues:
-#   https://github.com/bazelbuild/bazel/issues/418
+#   https://github.com.cnpmjs.org/bazelbuild/bazel/issues/418
 build  --verbose_failures --spawn_strategy=standalone --strategy=Genrule=standalone
 test --spawn_strategy=standalone
 

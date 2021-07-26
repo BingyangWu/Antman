@@ -96,10 +96,10 @@ class EinsumOpTest(test.TestCase):
     # Repeated indices.
     self._check('ijj,k->ik', (2, 3, 3), (4,))
     self._check('aba,a->b', (3, 4, 3), (3,))
-    # From https://github.com/dask/dask/pull/3412#discussion_r182413444
+    # From https://github.com.cnpmjs.org/dask/dask/pull/3412#discussion_r182413444
     self._check('aab,bc->ac', (2, 2, 3), (3, 4))
     self._check('aab,bcc->ac', (2, 2, 3), (3, 4, 4))
-    # Based on https://github.com/google/jax/issues/37#issuecomment-448572187
+    # Based on https://github.com.cnpmjs.org/google/jax/issues/37#issuecomment-448572187
     self._check('sa,shb->shab', (2, 1), (2, 3, 4))
 
   def testBroadcasting(self):

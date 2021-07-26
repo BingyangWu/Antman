@@ -26,7 +26,7 @@ limitations under the License.
 //  EXPECT_THAT(vec, ::testing::ElementsAre(1,2,3));
 //
 // For more details on gmock matchers see:
-// https://github.com/google/googletest/blob/master/googlemock/docs/CheatSheet.md#matchers
+// https://github.com.cnpmjs.org/google/googletest/blob/master/googlemock/docs/CheatSheet.md#matchers
 //
 // The advantages of using gmock matchers instead of self defined matchers are
 // better error messages, more maintainable tests and more test coverage.

@@ -28,7 +28,7 @@ cc_library(
 # above. Not needed when using the Android toolchain).
 #
 # Inspired from:
-# https://github.com/bazelbuild/bazel/blob/f99a0543f8d97339d32075c7176b79f35be84606/src/main/native/BUILD
+# https://github.com.cnpmjs.org/bazelbuild/bazel/blob/f99a0543f8d97339d32075c7176b79f35be84606/src/main/native/BUILD
 # but hopefully there is a simpler alternative to this.
 genrule(
     name = "copy_jni_h",

@@ -19,7 +19,7 @@
 
 
 RELEASE_URL_PREFIX="https://storage.googleapis.com/tensorflow/libtensorflow"
-TF_ECOSYSTEM_URL="https://github.com/tensorflow/ecosystem.git"
+TF_ECOSYSTEM_URL="https://github.com.cnpmjs.org/tensorflow/ecosystem.git"
 
 # By default we deploy to both ossrh and bintray. These two
 # environment variables can be set to skip either repository.
@@ -27,7 +27,7 @@ DEPLOY_BINTRAY="${DEPLOY_BINTRAY:-true}"
 DEPLOY_OSSRH="${DEPLOY_OSSRH:-true}"
 DEPLOY_LOCAL="${DEPLOY_LOCAL:-false}"
 
-PROTOC_RELEASE_URL="https://github.com/google/protobuf/releases/download/v3.5.1/protoc-3.5.1-linux-x86_64.zip"
+PROTOC_RELEASE_URL="https://github.com.cnpmjs.org/google/protobuf/releases/download/v3.5.1/protoc-3.5.1-linux-x86_64.zip"
 if [[ "${DEPLOY_BINTRAY}" != "true" && "${DEPLOY_OSSRH}" != "true" && "${DEPLOY_LOCAL}" != "true" ]]; then
   echo "Must deploy to at least one of Bintray, OSSRH or local" >&2
   exit 2
@@ -137,7 +137,7 @@ download_libtensorflow_jni_gpu() {
 # Ideally, the .jar for generated Java code for TensorFlow protocol buffer files
 # would have been produced by bazel rules. However, protocol buffer library
 # support in bazel is in flux. Once
-# https://github.com/bazelbuild/bazel/issues/2626 has been resolved, perhaps
+# https://github.com.cnpmjs.org/bazelbuild/bazel/issues/2626 has been resolved, perhaps
 # TensorFlow can move to something like
 # https://bazel.build/blog/2017/02/27/protocol-buffers.html
 # for generating C++, Java and Python code for protocol buffers.

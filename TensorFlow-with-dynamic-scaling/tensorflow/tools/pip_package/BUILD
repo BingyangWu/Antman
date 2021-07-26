@@ -247,7 +247,7 @@ sh_binary(
 #
 # This only works on Windows, because :simple_console_for_windows is a
 # python zip file containing everything we need for building the pip package.
-# However, on other platforms, due to https://github.com/bazelbuild/bazel/issues/4223,
+# However, on other platforms, due to https://github.com.cnpmjs.org/bazelbuild/bazel/issues/4223,
 # when C++ extensions change, this generule doesn't rebuild.
 genrule(
     name = "win_pip_package_marker",

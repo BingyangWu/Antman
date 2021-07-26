@@ -91,7 +91,7 @@ def _np_dct2(signals, n=None, norm=None):
     phi = np.cos(np.pi * (np.arange(dct_size) + 0.5) * k / dct_size)
     dct[..., k] = np.sum(signals_mod * phi, axis=-1)
   # SciPy's `dct` has a scaling factor of 2.0 which we follow.
-  # https://github.com/scipy/scipy/blob/v0.15.1/scipy/fftpack/src/dct.c.src
+  # https://github.com.cnpmjs.org/scipy/scipy/blob/v0.15.1/scipy/fftpack/src/dct.c.src
   if norm == "ortho":
     # The orthonormal scaling includes a factor of 0.5 which we combine with
     # the overall scaling of 2.0 to cancel.
@@ -105,7 +105,7 @@ def _np_dct2(signals, n=None, norm=None):
 def _np_dct3(signals, n=None, norm=None):
   """Computes the DCT-III manually with NumPy."""
   # SciPy's `dct` has a scaling factor of 2.0 which we follow.
-  # https://github.com/scipy/scipy/blob/v0.15.1/scipy/fftpack/src/dct.c.src
+  # https://github.com.cnpmjs.org/scipy/scipy/blob/v0.15.1/scipy/fftpack/src/dct.c.src
   signals_mod = _modify_input_for_dct(signals, n=n)
   dct_size = signals_mod.shape[-1]
   signals_mod = np.array(signals_mod)  # make a copy so we can modify

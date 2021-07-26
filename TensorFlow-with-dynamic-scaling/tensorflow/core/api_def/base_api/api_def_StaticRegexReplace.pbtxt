@@ -21,6 +21,6 @@ op {
     description: "If True, the replacement is global, otherwise the replacement\nis done only on the first match."
   }
   summary: "Replaces the match of pattern in input with rewrite."
-  description: "It follows the re2 syntax (https://github.com/google/re2/wiki/Syntax)"
+  description: "It follows the re2 syntax (https://github.com.cnpmjs.org/google/re2/wiki/Syntax)"
   visibility: HIDDEN
 }

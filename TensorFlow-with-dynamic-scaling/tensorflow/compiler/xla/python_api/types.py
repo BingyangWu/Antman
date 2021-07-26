@@ -123,7 +123,7 @@ MAP_XLA_TYPE_TO_RECORD = {
 
 # Maps from Numpy dtypes to TypeConversionRecord.
 # Note the conversion on the key. Numpy has a known issue wherein dtype hashing
-# doesn't work as expected (https://github.com/numpy/numpy/issues/7242). Thus,
+# doesn't work as expected (https://github.com.cnpmjs.org/numpy/numpy/issues/7242). Thus,
 # when keying by dtype in this dict, we use the string form of dtypes.
 MAP_DTYPE_TO_RECORD = {
     str(_np.dtype(record.numpy_dtype)): record

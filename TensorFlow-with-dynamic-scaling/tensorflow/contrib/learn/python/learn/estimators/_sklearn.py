@@ -35,7 +35,7 @@ class _BaseEstimator(object):
   """This is a cross-import when sklearn is not available.
 
   Adopted from sklearn.BaseEstimator implementation.
-  https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/base.py
+  https://github.com.cnpmjs.org/scikit-learn/scikit-learn/blob/master/sklearn/base.py
   """
 
   def get_params(self, deep=True):
@@ -149,7 +149,7 @@ class NotFittedError(ValueError, AttributeError):
   NotFittedError('This LinearSVC instance is not fitted yet',)
 
   Copied from
-  https://github.com/scikit-learn/scikit-learn/master/sklearn/exceptions.py
+  https://github.com.cnpmjs.org/scikit-learn/scikit-learn/master/sklearn/exceptions.py
   """
 
 # pylint: enable=old-style-class

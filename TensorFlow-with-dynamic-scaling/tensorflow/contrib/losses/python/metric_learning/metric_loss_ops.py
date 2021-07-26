@@ -456,7 +456,7 @@ def lifted_struct_loss(labels, embeddings, margin=1.0):
   # Keep track of matrix of maximums where M_ij = max(m_i, m_j)
   #   where m_i is the max of alpha - negative D_i's.
   # This matches the Caffe loss layer implementation at:
-  #   https://github.com/rksltnl/Caffe-Deep-Metric-Learning-CVPR16/blob/0efd7544a9846f58df923c8b992198ba5c355454/src/caffe/layers/lifted_struct_similarity_softmax_layer.cpp  # pylint: disable=line-too-long
+  #   https://github.com.cnpmjs.org/rksltnl/Caffe-Deep-Metric-Learning-CVPR16/blob/0efd7544a9846f58df923c8b992198ba5c355454/src/caffe/layers/lifted_struct_similarity_softmax_layer.cpp  # pylint: disable=line-too-long
 
   max_elements = math_ops.maximum(
       row_negative_maximums, array_ops.transpose(row_negative_maximums))

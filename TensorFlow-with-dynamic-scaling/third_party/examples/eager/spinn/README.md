@@ -10,10 +10,10 @@ Bowman, S.R., Gauthier, J., Rastogi A., Gupta, R., Manning, C.D., & Potts, C.
   https://arxiv.org/abs/1603.06021
 
 Our implementation is based on @jekbradbury's PyTorch implementation at:
-https://github.com/jekbradbury/examples/blob/spinn/snli/spinn.py,
+https://github.com.cnpmjs.org/jekbradbury/examples/blob/spinn/snli/spinn.py,
 
 which was released under the BSD 3-Clause License at:
-https://github.com/jekbradbury/examples/blob/spinn/LICENSE
+https://github.com.cnpmjs.org/jekbradbury/examples/blob/spinn/LICENSE
 
 Other eager execution examples can be found under [tensorflow/contrib/eager/python/examples](../../../../tensorflow/contrib/eager/python/examples).
 

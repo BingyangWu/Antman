@@ -34,7 +34,7 @@ def _scipy_raised_cosine(length, symmetric=True, a=0.5, b=0.5):
   """A simple implementation of a raised cosine window that matches SciPy.
 
   https://en.wikipedia.org/wiki/Window_function#Hann_window
-  https://github.com/scipy/scipy/blob/v0.14.0/scipy/signal/windows.py#L615
+  https://github.com.cnpmjs.org/scipy/scipy/blob/v0.14.0/scipy/signal/windows.py#L615
 
   Args:
     length: The window length.

@@ -1,5 +1,5 @@
 # Description:
-#   Wrap NVIDIA (https://github.com/NVIDIA/nccl) NCCL with tensorflow ops.
+#   Wrap NVIDIA (https://github.com.cnpmjs.org/NVIDIA/nccl) NCCL with tensorflow ops.
 #   APIs are meant to change over time.
 
 load("//tensorflow:tensorflow.bzl", "tf_cuda_cc_test")

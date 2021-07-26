@@ -7,7 +7,7 @@ def repo():
         name = "pasta",
         urls = [
             "https://storage.googleapis.com/mirror.tensorflow.org/github.com/google/pasta/archive/v0.1.2.tar.gz",
-            "https://github.com/google/pasta/archive/v0.1.2.tar.gz",
+            "https://github.com.cnpmjs.org/google/pasta/archive/v0.1.2.tar.gz",
         ],
         strip_prefix = "pasta-0.1.2",
         sha256 = "53e4c009a5eac38e942deb48bfc2d3cfca62cd457255fa86ffedb7e40f726a0c",

@@ -614,7 +614,7 @@ std::vector<string> SingleOpModel::ExtractVector(int index) const;
 // TensorType_FLOAT32, and 3. a TfLiteType (e.g. kTfLiteFloat32). The latter
 // two are actually enum values and not raw types, but these specializations
 // make it easy to use gUnit Typed Test Suite:
-// https://github.com/google/googletest/blob/master/googletest/docs/advanced.md#typed-tests
+// https://github.com.cnpmjs.org/google/googletest/blob/master/googletest/docs/advanced.md#typed-tests
 template <typename T>
 struct TypeUnion;
 

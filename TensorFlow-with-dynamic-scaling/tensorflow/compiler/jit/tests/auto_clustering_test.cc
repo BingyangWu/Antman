@@ -66,7 +66,7 @@ TEST_F(AutoClusteringTestImpl, KerasImagenetMainGraphMode) {
 }
 
 TEST_F(AutoClusteringTestImpl, OpenSeq2SeqGNMT) {
-  // Model is from https://github.com/NVIDIA/OpenSeq2Seq.
+  // Model is from https://github.com.cnpmjs.org/NVIDIA/OpenSeq2Seq.
   // Generated from
   //
   // python run.py \

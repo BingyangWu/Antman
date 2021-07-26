@@ -276,7 +276,7 @@ XLA_ELEMENT_TYPE_TO_DTYPE = {
 }
 
 # Note the conversion on the key. Numpy has a known issue wherein dtype hashing
-# doesn't work as expected (https://github.com/numpy/numpy/issues/7242). Thus,
+# doesn't work as expected (https://github.com.cnpmjs.org/numpy/numpy/issues/7242). Thus,
 # when keying by dtype in this dict, we use the string form of dtypes.
 DTYPE_TO_XLA_ELEMENT_TYPE = {
     str(dt): et for et, dt in XLA_ELEMENT_TYPE_TO_DTYPE.items()

@@ -81,7 +81,7 @@ class ConvertEmbeddedLookupFunc {
 };
 
 // This pass uses mechanisms listed in RFC:
-// https://github.com/tensorflow/community/pull/113
+// https://github.com.cnpmjs.org/tensorflow/community/pull/113
 // It prepares composite functions that are attributed to indicate
 // a specific interface (LSTM, SVDF, Embedding lookup etc.) by replacing the
 // body with the corresponding fused TFLite op. The replacement need not always

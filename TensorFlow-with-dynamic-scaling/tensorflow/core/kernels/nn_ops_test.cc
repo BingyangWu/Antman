@@ -460,7 +460,7 @@ BM_ConvFloatBkInAndFilter(32, 147, 147, 24, 64, 1, 1, 1, VALID, conv54);
   BENCHMARK(                                                                   \
       BM_ConvFloatBkFCPU_##BS##_##R##_##C##_##ID##_##OD##_##KR##_##KC##_##TH);
 
-// Benchmarks from https://github.com/soumith/convnet-benchmarks
+// Benchmarks from https://github.com.cnpmjs.org/soumith/convnet-benchmarks
 BM_ConvFloatBkFCPU(128, 128, 128, 3, 96, 11, 11, 4, "convnet-layer1");
 BM_ConvFloatBkFCPU(128, 64, 64, 64, 128, 9, 9, 4, "convnet-layer2");
 BM_ConvFloatBkFCPU(128, 32, 32, 128, 128, 9, 9, 4, "convnet-layer3");
@@ -481,7 +481,7 @@ BM_ConvFloatBkFCPU(128, 13, 13, 384, 384, 3, 3, 4, "convnet-layer5");
   BENCHMARK(BM_ConvFloatBkFGPU_##BS##_##R##_##C##_##ID##_##OD##_##KR##_##KC);  \
   BENCHMARK(BM_ConvHalfBkFGPU_##BS##_##R##_##C##_##ID##_##OD##_##KR##_##KC)
 
-// Benchmarks from https://github.com/soumith/convnet-benchmarks
+// Benchmarks from https://github.com.cnpmjs.org/soumith/convnet-benchmarks
 BM_ConvFloatBkFGPU(128, 128, 128, 3, 96, 11, 11, "convnet-layer1");
 BM_ConvFloatBkFGPU(128, 64, 64, 64, 128, 9, 9, "convnet-layer2");
 BM_ConvFloatBkFGPU(128, 32, 32, 128, 128, 9, 9, "convnet-layer3");

@@ -18,7 +18,7 @@ set -e
 BUILDTOOLS_VERSION="0.11.1"
 
 # Clone buildtools
-git clone -b $BUILDTOOLS_VERSION https://github.com/bazelbuild/buildtools
+git clone -b $BUILDTOOLS_VERSION https://github.com.cnpmjs.org/bazelbuild/buildtools
 cd buildtools
 
 # Build buildifier

@@ -129,15 +129,15 @@ func (th *TensorHandle) DeviceName() (string, error) {
 // be updated to return what the documentation says!
 func (th *TensorHandle) BackingDeviceName() (string, error) {
 	// TODO(ashankar): Restore after TensorFlow 1.13 is released.
-	// See https://github.com/tensorflow/tensorflow/issues/23257#issuecomment-433751410
+	// See https://github.com.cnpmjs.org/tensorflow/tensorflow/issues/23257#issuecomment-433751410
 	return th.DeviceName()
 	/*
-	status := newStatus()
-	name := C.TFE_TensorHandleBackingDeviceName(th.c, status.c)
-	if err := status.Err(); err != nil {
-		return "", err
-	}
-	return C.GoString(name), nil
+		status := newStatus()
+		name := C.TFE_TensorHandleBackingDeviceName(th.c, status.c)
+		if err := status.Err(); err != nil {
+			return "", err
+		}
+		return C.GoString(name), nil
 	*/
 }
 

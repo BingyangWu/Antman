@@ -26,7 +26,7 @@ if [[ -z $local_protobuf_ver_flat ]]; then
 fi
 if (( $local_protobuf_ver_flat < $protobuf_ver_flat )); then
   set -e
-  PROTOBUF_URL="https://github.com/google/protobuf/releases/download/v${PROTOBUF_VERSION}/protoc-${PROTOBUF_VERSION}-linux-x86_64.zip"
+  PROTOBUF_URL="https://github.com.cnpmjs.org/google/protobuf/releases/download/v${PROTOBUF_VERSION}/protoc-${PROTOBUF_VERSION}-linux-x86_64.zip"
   PROTOBUF_ZIP=$(basename "${PROTOBUF_URL}")
   UNZIP_DEST="google-protobuf"
 

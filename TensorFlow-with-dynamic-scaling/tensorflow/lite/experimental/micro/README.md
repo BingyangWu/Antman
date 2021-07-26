@@ -47,18 +47,18 @@ TensorFlow models.
 
 The following examples are available:
 
-- [hello_world](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/experimental/micro/examples/hello_world)
+- [hello_world](https://github.com.cnpmjs.org/tensorflow/tensorflow/tree/master/tensorflow/lite/experimental/micro/examples/hello_world)
   * Uses a very simple model, trained to reproduce a sine wave, to control an
     LED or animation
   * Application code for Arduino, SparkFun Edge, and STM32F746
   * Colab walkthrough of model training and conversion
 
-- [micro_speech](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/experimental/micro/examples/micro_speech)
+- [micro_speech](https://github.com.cnpmjs.org/tensorflow/tensorflow/tree/master/tensorflow/lite/experimental/micro/examples/micro_speech)
   * Uses a 20kb model to recognize keywords in spoken audio
   * Application code for Arduino, SparkFun Edge, and STM32F746
   * Python scripts for model training and conversion
 
-- [micro_vision](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/experimental/micro/examples/micro_vision)
+- [micro_vision](https://github.com.cnpmjs.org/tensorflow/tensorflow/tree/master/tensorflow/lite/experimental/micro/examples/micro_vision)
   * Uses a 250kb model to recognize presence or absence of a person in images
     captured by a camera
   * Application code for SparkFun Edge
@@ -76,7 +76,7 @@ project files that you can download for the following platforms:
 Device                                                                                         | Mbed                                                                           | Keil                                                                           | Make/GCC
 ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ | --------
 [STM32F746G Discovery Board](https://www.st.com/en/evaluation-tools/32f746gdiscovery.html)     | [Download](https://drive.google.com/open?id=1OtgVkytQBrEYIpJPsE8F6GUKHPBS3Xeb) | -                                                                              | [Download](https://drive.google.com/open?id=1u46mTtAMZ7Y1aD-He1u3R8AE4ZyEpnOl)
-["Blue Pill" STM32F103-compatible development board](https://github.com/google/stm32_bare_lib) | -                                                                              | -                                                                              | [Instructions](#building-for-the-blue-pill-stm32f103-using-make)
+["Blue Pill" STM32F103-compatible development board](https://github.com.cnpmjs.org/google/stm32_bare_lib) | -                                                                              | -                                                                              | [Instructions](#building-for-the-blue-pill-stm32f103-using-make)
 [Ambiq Micro Apollo3Blue EVB using Make](https://ambiqmicro.com/apollo-ultra-low-power-mcus/)  | -                                                                              | -                                                                              | [Instructions](#building-for-ambiq-micro-apollo3blue-evb-using-make)
 [Generic Keil uVision Projects](http://www2.keil.com/mdk5/uvision/)                            | -                                                                              | [Download](https://drive.google.com/open?id=1Lw9rsdquNKObozClLPoE5CTJLuhfh5mV) | -
 [Eta Compute ECM3531 EVB](https://etacompute.com/)                                             | -                                                                              | -                                                                              | [Instructions](#Building-for-the-Eta-Compute-ECM3531-EVB-using-Make)
@@ -105,7 +105,7 @@ you're on a Linux or OS X machine with an internet connection.
 
 -   Open a terminal
 -   Download the TensorFlow source with `git clone
-    https://github.com/tensorflow/tensorflow.git`
+    https://github.com.cnpmjs.org/tensorflow/tensorflow.git`
 -   Enter the source root directory by running `cd tensorflow`
 -   Build and test the library with `make -f
     tensorflow/lite/experimental/micro/tools/make/Makefile test`
@@ -130,7 +130,7 @@ Testing SimpleTestReluQuantized
 ```
 
 Looking at the
-[depthwise_conv_test.cc](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/micro/kernels/depthwise_conv_test.cc)
+[depthwise_conv_test.cc](https://github.com.cnpmjs.org/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/micro/kernels/depthwise_conv_test.cc)
 code, you'll see a sequence that looks like this:
 
 ```
@@ -145,7 +145,7 @@ TF_LITE_MICRO_TESTS_END
 ```
 
 These macros work a lot like
-[the Google test framework](https://github.com/google/googletest), but they
+[the Google test framework](https://github.com.cnpmjs.org/google/googletest), but they
 don't require any dependencies and just write results to stderr, rather than
 aborting the program. If all the tests pass, then `~~~ALL TESTS PASSED~~~` is
 output, and the test harness that runs the binary during the make process knows
@@ -161,12 +161,12 @@ micro controller devices.
 
 The goal of this library is to enable machine learning on resource-constrained
 micro controllers and DSPs, and as part of that we've targeted the
-["Blue Pill" STM32F103-compatible development board](https://github.com/google/stm32_bare_lib)
+["Blue Pill" STM32F103-compatible development board](https://github.com.cnpmjs.org/google/stm32_bare_lib)
 as a cheap and popular platform. It only has 20KB of RAM and 64KB of flash, so
 it's a good device to ensure we can run efficiently on small chips.
 
 It's fairly easy to
-[buy and wire up a physical board](https://github.com/google/stm32_bare_lib#wiring-up-your-blue-pill),
+[buy and wire up a physical board](https://github.com.cnpmjs.org/google/stm32_bare_lib#wiring-up-your-blue-pill),
 but even if you don't have an actual device, the
 [Renode project](https://renode.io/) makes it easy to run a faithful emulation
 on your desktop machine. You'll need [Docker](https://www.docker.com/)
@@ -337,7 +337,7 @@ To flash a part with JFlash Lite, do the following:
 ## Building for the Eta Compute ECM3531 EVB using Make
 
 1.  Follow the instructions at
-    [Tensorflow Micro Speech](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/experimental/micro/examples/micro_speech#getting-started)
+    [Tensorflow Micro Speech](https://github.com.cnpmjs.org/tensorflow/tensorflow/tree/master/tensorflow/lite/experimental/micro/examples/micro_speech#getting-started)
     to down load the Tensorflow source code and the support libraries \(but do
     not run the make command shown there.\)
 2.  Download the Eta Compute SDK, version 0.0.17. Contact info@etacompute.com
@@ -437,7 +437,7 @@ The design goals are for the framework to be:
     the best code available for each platform. To do that, we're going to rely
     on projects like
     [CMSIS-NN](https://www.keil.com/pack/doc/CMSIS/NN/html/index.html),
-    [uTensor](https://github.com/uTensor/uTensor), and other vendor libraries to
+    [uTensor](https://github.com.cnpmjs.org/uTensor/uTensor), and other vendor libraries to
     handle as much performance-critical code as possible. We know that there are
     an increasing number of options to accelerate neural networks on
     microcontrollers, so we're aiming to be a good host for deploying those
@@ -484,7 +484,7 @@ To meet those goals, we've made some tradeoffs:
     interface calls which hide the underlying complexity.
 
 -   **Flatbuffers**: We represent our models using
-    [the standard flatbuffer schema used by the rest of TensorFlow Lite](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/schema/schema.fbs),
+    [the standard flatbuffer schema used by the rest of TensorFlow Lite](https://github.com.cnpmjs.org/tensorflow/tensorflow/blob/master/tensorflow/lite/schema/schema.fbs),
     with the difference that we always keep it in read-only program memory
     (typically flash) rather than relying on having a file system to read it
     from. This is a good fit because flatbuffer's serialized format is designed
@@ -495,7 +495,7 @@ To meet those goals, we've made some tradeoffs:
     with no strides or unpacking needed. We do get a lot of value from using
     flatbuffers, but there is a cost in complexity. The flat buffer library code
     is all inline
-    [inside the main headers](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/schema/schema_generated.h),
+    [inside the main headers](https://github.com.cnpmjs.org/tensorflow/tensorflow/blob/master/tensorflow/lite/schema/schema_generated.h),
     but it isn't straightforward to inspect their implementations, and the model
     data structures aren't easy to comprehend from the debugger. The header for
     the schema itself also has to be periodically updated when new information
@@ -641,13 +641,13 @@ As mentioned above, the one function you will need to implement for a completely
 new platform is debug logging. If your device is just a variation on an existing
 platform you may be able to reuse code that's already been written. To
 understand what's available, begin with the default reference implementation at
-[tensorflow/lite/experimental/micro/debug_log.cc](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/micro/debug_log.cc),
+[tensorflow/lite/experimental/micro/debug_log.cc](https://github.com.cnpmjs.org/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/micro/debug_log.cc),
 which uses fprintf and stderr. If your platform has this level of support for
 the C standard library in its toolchain, then you can just reuse this.
 Otherwise, you'll need to do some research into how your platform and device can
 communicate logging statements to the outside world. As another example, take a
 look at
-[the Mbed version of `DebugLog()`](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/micro/mbed/debug_log.cc),
+[the Mbed version of `DebugLog()`](https://github.com.cnpmjs.org/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/micro/mbed/debug_log.cc),
 which creates a UART object and uses it to output strings to the host's console
 if it's connected.
 
@@ -727,13 +727,13 @@ specialized implementation, you can create a folder in the same directory as the
 header and reference source, name it after your platform, and put your
 implementation in a `.cc` file inside that folder. We've already seen one
 example of this, where the Mbed and Bluepill versions of `DebugLog()` are inside
-[mbed](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/experimental/micro/mbed)
+[mbed](https://github.com.cnpmjs.org/tensorflow/tensorflow/tree/master/tensorflow/lite/experimental/micro/mbed)
 and
-[bluepill](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/experimental/micro/bluepill)
+[bluepill](https://github.com.cnpmjs.org/tensorflow/tensorflow/tree/master/tensorflow/lite/experimental/micro/bluepill)
 folders, children of the
-[same directory](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/experimental/micro)
+[same directory](https://github.com.cnpmjs.org/tensorflow/tensorflow/tree/master/tensorflow/lite/experimental/micro)
 where the stdio-based
-[`debug_log.cc`](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/experimental/micro/debug_log.cc)
+[`debug_log.cc`](https://github.com.cnpmjs.org/tensorflow/tensorflow/tree/master/tensorflow/lite/experimental/micro/debug_log.cc)
 reference implementation is found.
 
 The advantage of this approach is that we can automatically pick specialized
@@ -819,7 +819,7 @@ kernel implementations, but with some specific conventions:
 -   No platform-specific macros or #ifdef’s should be used in any portable code.
 
 The implementation of these rules is handled inside the Makefile, with a
-[`specialize` function](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/micro/tools/make/helper_functions.inc#L42)
+[`specialize` function](https://github.com.cnpmjs.org/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/micro/tools/make/helper_functions.inc#L42)
 that takes a list of reference source file paths as an input, and returns the
 equivalent list with specialized versions of those files swapped in if they
 exist.
@@ -828,7 +828,7 @@ exist.
 
 So far, I've recommended that you use the standalone generated projects for your
 system. You might be wondering why you're not just checking out the full
-[TensorFlow codebase from GitHub](https://github.com/tensorflow/tensorflow/)?
+[TensorFlow codebase from GitHub](https://github.com.cnpmjs.org/tensorflow/tensorflow/)?
 The main reason is that there is a lot more diversity of architectures, IDEs,
 support libraries, and operating systems in the embedded world. Many of the
 toolchains require their own copy of source files, or a list of sources to be
@@ -865,9 +865,9 @@ can either be the operating system (for example 'mbed'), the name of a device
 ('bluepill'), or some other text that describes it. This should be a short
 string with no spaces or special characters. Log in or create an account on
 GitHub, fork the full
-[TensorFlow codebase](https://github.com/tensorflow/tensorflow/) using the
+[TensorFlow codebase](https://github.com.cnpmjs.org/tensorflow/tensorflow/) using the
 'Fork' button on the top left, and then grab your fork by using a command like
-`git clone https://github.com/<your user name>/tensorflow`.
+`git clone https://github.com.cnpmjs.org/<your user name>/tensorflow`.
 
 You'll either need Linux, MacOS, or Windows with something like CygWin installed
 to run the next steps, since they involve building a makefile. Run the following
@@ -926,7 +926,7 @@ git commit -a -m "Added DebugLog() support for <your platform>"
 git push origin master
 ```
 
-Then go back to `https://github.com/<your account>/tensorflow`, and choose "New
+Then go back to `https://github.com.cnpmjs.org/<your account>/tensorflow`, and choose "New
 Pull Request" near the top. You should then be able to go through the standard
 TensorFlow PR process to get your change added to the main repository, and
 available to the rest of the community!
@@ -959,7 +959,7 @@ can't guarantee that users will have a good experience when they try using it.
 Since physically maintaining a full set of all supported hardware devices isn't
 feasible, we rely on software emulation to run these tests. A good example is
 our
-[STM32F4 'Bluepill' support](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/micro/testing/test_bluepill_binary.sh),
+[STM32F4 'Bluepill' support](https://github.com.cnpmjs.org/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/micro/testing/test_bluepill_binary.sh),
 which uses [Docker](https://www.docker.com/) and [Renode](https://renode.io/) to
 run built binaries in an emulator. You can use whatever technologies you want,
 the only requirements are that they capture the debug log output of the tests
@@ -980,9 +980,9 @@ bottlenecks, and then add specialized implementations in their own folders.
 These don't need to be platform specific, they can also be broken out by which
 library they rely on for example. [Here's where we do that for the CMSIS
 implementation of integer fast-fourier
-transforms](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/micro/examples/micro_speech/simple_features/simple_features_generator.cc).
+transforms](https://github.com.cnpmjs.org/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/micro/examples/micro_speech/simple_features/simple_features_generator.cc).
 This more complex case shows that you can also add helper source files alongside
 the main implementation, as long as you
-[mention them in the platform-specific makefile](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/micro/examples/micro_speech/CMSIS/Makefile.inc).
+[mention them in the platform-specific makefile](https://github.com.cnpmjs.org/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/micro/examples/micro_speech/CMSIS/Makefile.inc).
 You can also do things like update the list of libraries that need to be linked
 in, or add include paths to required headers.

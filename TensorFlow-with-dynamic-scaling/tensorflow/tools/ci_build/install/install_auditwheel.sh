@@ -19,7 +19,7 @@ set -e
 sudo pip3 install auditwheel==1.5.0
 
 # Pin wheel==0.31.1 to work around issue
-# https://github.com/pypa/auditwheel/issues/102
+# https://github.com.cnpmjs.org/pypa/auditwheel/issues/102
 sudo pip3 install wheel==0.31.1
 
 set +e

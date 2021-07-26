@@ -193,7 +193,7 @@ BM_SpatialConvolutions(32, 7, 7, 160, 320, 3, 3, "conv5a_00_3x3");
 BM_SpatialConvolutions(32, 7, 7, 48, 128, 5, 5, "conv5a_00_5x5 / conv5_00_5x5");
 BM_SpatialConvolutions(32, 7, 7, 192, 384, 3, 3, "conv5_00_3x3");
 
-// Benchmarks from https://github.com/soumith/convnet-benchmarks
+// Benchmarks from https://github.com.cnpmjs.org/soumith/convnet-benchmarks
 BM_SpatialConvolutions(128, 128, 128, 3, 96, 11, 11, "convnet-layer1");
 BM_SpatialConvolutions(128, 64, 64, 64, 128, 9, 9, "convnet-layer2");
 BM_SpatialConvolutions(128, 32, 32, 128, 128, 9, 9, "convnet-layer3");

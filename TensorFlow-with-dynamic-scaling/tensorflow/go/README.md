@@ -82,7 +82,7 @@ from source.
 Go functions corresponding to TensorFlow operations are generated in `op/wrappers.go`. To regenerate them:
 
 Prerequisites:
-- [Protocol buffer compiler (protoc) 3.x](https://github.com/google/protobuf/releases/)
+- [Protocol buffer compiler (protoc) 3.x](https://github.com.cnpmjs.org/google/protobuf/releases/)
 - The TensorFlow repository under GOPATH
 
 ```sh
@@ -92,10 +92,10 @@ go generate github.com/tensorflow/tensorflow/tensorflow/go/op
 ## Support
 
 Use [stackoverflow](http://stackoverflow.com/questions/tagged/tensorflow) and/or
-[Github issues](https://github.com/tensorflow/tensorflow/issues).
+[Github issues](https://github.com.cnpmjs.org/tensorflow/tensorflow/issues).
 
 ## Contributions
 
 Contributions are welcome. If making any signification changes, probably best to
-discuss on a [Github issue](https://github.com/tensorflow/tensorflow/issues)
+discuss on a [Github issue](https://github.com.cnpmjs.org/tensorflow/tensorflow/issues)
 before investing too much time. Github pull requests are used for contributions.

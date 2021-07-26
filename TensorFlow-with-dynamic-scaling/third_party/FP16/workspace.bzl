@@ -9,7 +9,7 @@ def repo():
         sha256 = "3e71681e0a67cd28552aa0bbb78ec6a6bd238216df15336dc1326280f7958de2",
         urls = [
             "https://mirror.bazel.build/github.com/Maratyszcza/FP16/archive/febbb1c163726b5db24bed55cc9dc42529068997.tar.gz",
-            "https://github.com/Maratyszcza/FP16/archive/febbb1c163726b5db24bed55cc9dc42529068997.tar.gz",
+            "https://github.com.cnpmjs.org/Maratyszcza/FP16/archive/febbb1c163726b5db24bed55cc9dc42529068997.tar.gz",
         ],
         build_file = "//third_party/FP16:BUILD.bazel",
     )

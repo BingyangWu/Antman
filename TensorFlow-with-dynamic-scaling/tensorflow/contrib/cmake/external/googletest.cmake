@@ -15,7 +15,7 @@
 include (ExternalProject)
 
 set(googletest_INCLUDE_DIRS ${CMAKE_CURRENT_BINARY_DIR}/googletest/src/googletest/googletest/include)
-set(googletest_URL https://github.com/google/googletest.git)
+set(googletest_URL https://github.com.cnpmjs.org/google/googletest.git)
 set(googletest_BUILD ${CMAKE_CURRENT_BINARY_DIR}/googletest/)
 set(googletest_TAG ec44c6c1675c25b9827aacd08c02433cccde7780)
 

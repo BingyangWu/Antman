@@ -14,7 +14,7 @@
 # ==============================================================================
 """Profiler for TensorFlow models that outputs data in pprof format.
 
-See https://github.com/google/pprof/blob/master/proto/profile.proto for pprof
+See https://github.com.cnpmjs.org/google/pprof/blob/master/proto/profile.proto for pprof
 profile format.
 The following needs to be set for profiler to work:
   * trace_level needs to be set to FULL_TRACE
@@ -389,7 +389,7 @@ class PprofProfiler(object):
 def get_profiles(graph, run_metadata):
   """Generate profiles in pprof format.
 
-  See https://github.com/google/pprof/blob/master/proto/profile.proto
+  See https://github.com.cnpmjs.org/google/pprof/blob/master/proto/profile.proto
   for pprof proto format.
 
   Args:
@@ -405,7 +405,7 @@ def get_profiles(graph, run_metadata):
 def profile(graph, run_metadata, output_dir=None):
   """Generate profiles in pprof format.
 
-  See https://github.com/google/pprof/blob/master/proto/profile.proto
+  See https://github.com.cnpmjs.org/google/pprof/blob/master/proto/profile.proto
   for pprof proto format.
 
   Args:

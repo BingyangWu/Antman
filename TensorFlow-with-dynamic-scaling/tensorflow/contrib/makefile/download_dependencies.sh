@@ -28,21 +28,21 @@ fi
 
 EIGEN_URL="$(grep -o 'https://storage.googleapis.com/mirror.tensorflow.org/bitbucket.org/eigen/eigen/get/.*tar.gz' "${BZL_FILE_PATH}")"
 GEMMLOWP_URL="$(grep -o 'https://storage.googleapis.com/mirror.tensorflow.org/github.com/google/gemmlowp/.*zip' "${BZL_FILE_PATH}" | head -n1)"
-GOOGLETEST_URL="https://github.com/google/googletest/archive/release-1.8.0.tar.gz"
+GOOGLETEST_URL="https://github.com.cnpmjs.org/google/googletest/archive/release-1.8.0.tar.gz"
 NSYNC_URL="$(grep -o 'https://storage.googleapis.com/mirror.tensorflow.org/github.com/google/nsync/.*tar\.gz' "${BZL_FILE_PATH}" | head -n1)"
 
 # Note: The protobuf repo needs to be cloned due to its submodules.
 # These variables contain the GitHub repo and the sha, from `tensorflow/workspace.bzl`,
 # from which to clone it from and checkout to.
-readonly PROTOBUF_REPO="https://github.com/protocolbuffers/protobuf.git"
-readonly PROTOBUF_TAG="$(grep -o 'https://github.com/protocolbuffers/protobuf/archive/.*tar\.gz' "${BZL_FILE_PATH}" | head -n1 | awk '{print substr($0, index($0, "archive") + 8, index($0, "tar") - index($0, "archive") - 9) }')"
+readonly PROTOBUF_REPO="https://github.com.cnpmjs.org/protocolbuffers/protobuf.git"
+readonly PROTOBUF_TAG="$(grep -o 'https://github.com.cnpmjs.org/protocolbuffers/protobuf/archive/.*tar\.gz' "${BZL_FILE_PATH}" | head -n1 | awk '{print substr($0, index($0, "archive") + 8, index($0, "tar") - index($0, "archive") - 9) }')"
 
 # TODO (yongtang): Replace the following with 'https://storage.googleapis.com/mirror.tensorflow.org/github.com/google/re2/.*tar\.gz' once
 # the archive has been propagated in mirror.tensorflow.org.
-RE2_URL="$(grep -o 'https://github.com/google/re2/.*tar\.gz' "${BZL_FILE_PATH}" | head -n1)"
+RE2_URL="$(grep -o 'https://github.com.cnpmjs.org/google/re2/.*tar\.gz' "${BZL_FILE_PATH}" | head -n1)"
 FFT2D_URL="$(grep -o 'http.*fft2d\.tgz' "${BZL_FILE_PATH}" | grep -v bazel-mirror | head -n1)"
 DOUBLE_CONVERSION_URL="$(grep -o "https.*google/double-conversion.*\.zip" "${BZL_FILE_PATH}" | head -n1)"
-ABSL_URL="$(grep -o 'https://github.com/abseil/abseil-cpp/.*tar.gz' "${BZL_FILE_PATH}" | head -n1)"
+ABSL_URL="$(grep -o 'https://github.com.cnpmjs.org/abseil/abseil-cpp/.*tar.gz' "${BZL_FILE_PATH}" | head -n1)"
 CUB_URL="$(grep -o 'https.*cub/archive.*zip' "${BZL_FILE_PATH}" | grep -v mirror.bazel | head -n1)"
 
 # Required for TensorFlow Lite Flex runtime.

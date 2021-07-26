@@ -61,8 +61,8 @@ function build_libtensorflow_tarball() {
   yes "" | ./configure
 
   # Remove this test call when
-  # https://github.com/bazelbuild/bazel/issues/2352
-  # and https://github.com/bazelbuild/bazel/issues/1580
+  # https://github.com.cnpmjs.org/bazelbuild/bazel/issues/2352
+  # and https://github.com.cnpmjs.org/bazelbuild/bazel/issues/1580
   # have been resolved and the "manual" tags on the BUILD targets
   # in tensorflow/tools/lib_package/BUILD are removed.
   # Till then, must manually run the test since these tests are

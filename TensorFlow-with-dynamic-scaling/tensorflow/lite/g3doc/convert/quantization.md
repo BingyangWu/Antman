@@ -45,7 +45,7 @@ tflite_quant_model = converter.convert()
 Quantizing models for integer-only execution gets a model with even faster
 latency, smaller size, and integer-only accelerators compatible model.
 Currently, this requires training a model with
-["fake-quantization" nodes](https://github.com/tensorflow/tensorflow/tree/r1.13/tensorflow/contrib/quantize).
+["fake-quantization" nodes](https://github.com.cnpmjs.org/tensorflow/tensorflow/tree/r1.13/tensorflow/contrib/quantize).
 
 This is only available in the v1 converter. A longer term solution that's
 compatible with 2.0 semantics is in progress.

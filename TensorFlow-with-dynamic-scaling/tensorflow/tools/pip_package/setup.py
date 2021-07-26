@@ -78,7 +78,7 @@ REQUIRED_PACKAGES = [
 if sys.byteorder == 'little':
   # grpcio does not build correctly on big-endian machines due to lack of
   # BoringSSL support.
-  # See https://github.com/tensorflow/tensorflow/issues/17882.
+  # See https://github.com.cnpmjs.org/tensorflow/tensorflow/issues/17882.
   REQUIRED_PACKAGES.append('grpcio >= 1.8.6')
 
 project_name = 'tensorflow'
@@ -257,7 +257,7 @@ setup(
     description=DOCLINES[0],
     long_description='\n'.join(DOCLINES[2:]),
     url='https://www.tensorflow.org/',
-    download_url='https://github.com/tensorflow/tensorflow/tags',
+    download_url='https://github.com.cnpmjs.org/tensorflow/tensorflow/tags',
     author='Google Inc.',
     author_email='packages@tensorflow.org',
     # Contained modules and scripts.

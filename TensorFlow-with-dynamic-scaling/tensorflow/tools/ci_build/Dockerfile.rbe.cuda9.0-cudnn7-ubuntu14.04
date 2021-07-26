@@ -64,7 +64,7 @@ RUN echo "/usr/local/nvidia/lib" >> /etc/ld.so.conf.d/nvidia.conf && \
     echo "/usr/local/nvidia/lib64" >> /etc/ld.so.conf.d/nvidia.conf
 
 # TODO(b/110903506): Provide a link to the SONAME of libcuda.so.
-# https://github.com/NVIDIA/nvidia-docker/issues/775
+# https://github.com.cnpmjs.org/NVIDIA/nvidia-docker/issues/775
 RUN ln -s libcuda.so /usr/local/cuda/lib64/stubs/libcuda.so.1
 
 # Install a newer version of libstdc++, as new clang versions do not work

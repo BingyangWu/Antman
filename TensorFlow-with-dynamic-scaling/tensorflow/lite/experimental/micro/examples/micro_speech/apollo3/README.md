@@ -121,7 +121,7 @@
 
 # FFT scaling
 
-See https://github.com/ARM-software/CMSIS_5/issues/220
+See https://github.com.cnpmjs.org/ARM-software/CMSIS_5/issues/220
 
 > And as @xizhizhang pointed, I think there may be an error on the internal
 > downscaling, or at least on the documentation. It looks like during the fft

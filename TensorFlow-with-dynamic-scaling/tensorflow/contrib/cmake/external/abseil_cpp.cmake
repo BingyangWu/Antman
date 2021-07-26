@@ -39,7 +39,7 @@ else (systemlib_ABSEIL_CPP)
   include (ExternalProject)
 
   set(abseil_cpp_INCLUDE_DIR ${CMAKE_BINARY_DIR}/abseil_cpp/src/abseil_cpp_build)
-  set(abseil_cpp_URL https://github.com/abseil/abseil-cpp.git)
+  set(abseil_cpp_URL https://github.com.cnpmjs.org/abseil/abseil-cpp.git)
   set(abseil_cpp_TAG master)
   set(abseil_cpp_BUILD ${CMAKE_BINARY_DIR}/abseil_cpp/src/abseil_cpp_build)
 

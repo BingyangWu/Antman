@@ -20,7 +20,7 @@ they have no Tensor-dependent control flow), then the code is likely to still
 run without error. However, if it contains any constructs that are only
 supported in AutoGraph, expect subsequent exceptions.
 
-Note: the warning is output to the [abseil](https://github.com/abseil/abseil-py)
+Note: the warning is output to the [abseil](https://github.com.cnpmjs.org/abseil/abseil-py)
 logger, with `WARNING` severity. To direct these warnings to `stdout`, use
 `tf.autograph.set_verbosity(0, True)`.
 

@@ -150,7 +150,7 @@ When filing bugs, attach the contents of the `/tmp/generated` directory
 
 If possible, try to isolate
 a bug to a single XLA program by using the
-[`replay_computation`](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/compiler/xla/tools/replay_computation.cc)
+[`replay_computation`](https://github.com.cnpmjs.org/tensorflow/tensorflow/blob/master/tensorflow/compiler/xla/tools/replay_computation.cc)
 and iteratively running it on generated programs.
 
 ## Further reading
@@ -159,7 +159,7 @@ and iteratively running it on generated programs.
 -   [XLA - TensorFlow, Compiled](https://developers.googleblog.com/2017/03/xla-tensorflow-compiled.html):
     Read on Google Developers Blog
 -   Check out the
-    [XLA source](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/compiler/xla)
+    [XLA source](https://github.com.cnpmjs.org/tensorflow/tensorflow/tree/master/tensorflow/compiler/xla)
     on Github!
 
 <iframe frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay;

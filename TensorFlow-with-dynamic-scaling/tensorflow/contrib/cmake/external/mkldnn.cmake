@@ -15,7 +15,7 @@
 include (ExternalProject)
 
 set(mkldnn_INCLUDE_DIRS ${CMAKE_CURRENT_BINARY_DIR}/mkldnn/src/mkldnn/include)
-set(mkldnn_URL https://github.com/01org/mkl-dnn.git)
+set(mkldnn_URL https://github.com.cnpmjs.org/01org/mkl-dnn.git)
 set(mkldnn_BUILD ${CMAKE_CURRENT_BINARY_DIR}/mkldnn/src/mkldnn/src)
 set(mkldnn_TAG 3063b2e4c943983f6bf5f2fb9a490d4a998cd291)
 

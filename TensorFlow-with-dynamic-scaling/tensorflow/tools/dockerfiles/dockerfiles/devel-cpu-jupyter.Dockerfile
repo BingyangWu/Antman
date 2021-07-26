@@ -50,7 +50,7 @@ ENV CI_BUILD_PYTHON python
 ARG CACHE_STOP=1
 # Check out TensorFlow source code if --build-arg CHECKOUT_TF_SRC=1
 ARG CHECKOUT_TF_SRC=0
-RUN test "${CHECKOUT_TF_SRC}" -eq 1 && git clone https://github.com/tensorflow/tensorflow.git /tensorflow_src || true
+RUN test "${CHECKOUT_TF_SRC}" -eq 1 && git clone https://github.com.cnpmjs.org/tensorflow/tensorflow.git /tensorflow_src || true
 
 ARG USE_PYTHON_3_NOT_2
 ARG _PY_SUFFIX=${USE_PYTHON_3_NOT_2:+3}
@@ -100,7 +100,7 @@ RUN ${PIP} --no-cache-dir install \
 # Install bazel
 ARG BAZEL_VERSION=0.26.1
 RUN mkdir /bazel && \
-    wget -O /bazel/installer.sh "https://github.com/bazelbuild/bazel/releases/download/${BAZEL_VERSION}/bazel-${BAZEL_VERSION}-installer-linux-x86_64.sh" && \
+    wget -O /bazel/installer.sh "https://github.com.cnpmjs.org/bazelbuild/bazel/releases/download/${BAZEL_VERSION}/bazel-${BAZEL_VERSION}-installer-linux-x86_64.sh" && \
     wget -O /bazel/LICENSE.txt "https://raw.githubusercontent.com/bazelbuild/bazel/master/LICENSE" && \
     chmod +x /bazel/installer.sh && \
     /bazel/installer.sh && \

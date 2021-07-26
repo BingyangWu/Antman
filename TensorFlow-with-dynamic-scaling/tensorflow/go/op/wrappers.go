@@ -14977,7 +14977,7 @@ func RegexReplaceReplaceGlobal(value bool) RegexReplaceAttr {
 // Replaces matches of the `pattern` regular expression in `input` with the
 // replacement string provided in `rewrite`.
 //
-// It follows the re2 syntax (https://github.com/google/re2/wiki/Syntax)
+// It follows the re2 syntax (https://github.com.cnpmjs.org/google/re2/wiki/Syntax)
 //
 // Arguments:
 //	input: The text to be processed.
@@ -36262,7 +36262,7 @@ func StaticRegexReplaceReplaceGlobal(value bool) StaticRegexReplaceAttr {
 
 // Replaces the match of pattern in input with rewrite.
 //
-// It follows the re2 syntax (https://github.com/google/re2/wiki/Syntax)
+// It follows the re2 syntax (https://github.com.cnpmjs.org/google/re2/wiki/Syntax)
 //
 // Arguments:
 //	input: The text to be processed.
@@ -39630,7 +39630,7 @@ func Svd(scope *Scope, input tf.Output, optional ...SvdAttr) (s tf.Output, u tf.
 // The boolean values (True or False) of the output tensor indicate
 // if the input matches the regex pattern provided.
 //
-// The pattern follows the re2 syntax (https://github.com/google/re2/wiki/Syntax)
+// The pattern follows the re2 syntax (https://github.com.cnpmjs.org/google/re2/wiki/Syntax)
 //
 // Arguments:
 //	input: A string tensor of the text to be processed.
@@ -40019,7 +40019,7 @@ func SparseReduceSumSparse(scope *Scope, input_indices tf.Output, input_values t
 // The boolean values (True or False) of the output tensor indicate
 // if the input matches the regex pattern provided.
 //
-// The pattern follows the re2 syntax (https://github.com/google/re2/wiki/Syntax)
+// The pattern follows the re2 syntax (https://github.com.cnpmjs.org/google/re2/wiki/Syntax)
 //
 // Arguments:
 //	input: A string tensor of the text to be processed.

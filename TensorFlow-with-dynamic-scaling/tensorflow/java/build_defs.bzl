@@ -3,7 +3,7 @@
 # Pin to Java 1.7 to ensure broader compatibility for the Java bindings on
 # Android. Note also that the android_library bazel rule currently enforces
 # java 7
-# https://github.com/bazelbuild/bazel/blob/6c1106b1a721516d3b3db54d2e1c31b44a76fbb1/src/main/java/com/google/devtools/build/lib/bazel/rules/android/BazelAndroidSemantics.java#L73
+# https://github.com.cnpmjs.org/bazelbuild/bazel/blob/6c1106b1a721516d3b3db54d2e1c31b44a76fbb1/src/main/java/com/google/devtools/build/lib/bazel/rules/android/BazelAndroidSemantics.java#L73
 
 JAVA_VERSION_OPTS = [
     "-source 7 -target 7",
@@ -22,14 +22,14 @@ XLINT_OPTS = [
 ]
 
 # The bazel errorprone plugin currently only enables default errorChecks
-# https://github.com/bazelbuild/bazel/blob/97975603e5ff2247e6bb352e3afd27fea38f108d/src/java_tools/buildjar/java/com/google/devtools/build/buildjar/javac/plugins/errorprone/ErrorPronePlugin.java#L52
+# https://github.com.cnpmjs.org/bazelbuild/bazel/blob/97975603e5ff2247e6bb352e3afd27fea38f108d/src/java_tools/buildjar/java/com/google/devtools/build/buildjar/javac/plugins/errorprone/ErrorPronePlugin.java#L52
 #
 # Default errorChecks are errorprone checkers listed under ENABLED_ERRORS at
-# https://github.com/google/error-prone/blob/c6f24bc387989158d99af28e7ae86755e56c5f38/core/src/main/java/com/google/errorprone/scanner/BuiltInCheckerSuppliers.java#L273
+# https://github.com.cnpmjs.org/google/error-prone/blob/c6f24bc387989158d99af28e7ae86755e56c5f38/core/src/main/java/com/google/errorprone/scanner/BuiltInCheckerSuppliers.java#L273
 #
 # Here we enable all available errorprone checks to converge on a consistent
 # code style.
-# https://github.com/google/error-prone/blob/c6f24bc387989158d99af28e7ae86755e56c5f38/core/src/main/java/com/google/errorprone/scanner/BuiltInCheckerSuppliers.java#L260
+# https://github.com.cnpmjs.org/google/error-prone/blob/c6f24bc387989158d99af28e7ae86755e56c5f38/core/src/main/java/com/google/errorprone/scanner/BuiltInCheckerSuppliers.java#L260
 
 # This list is from ENABLED_WARNINGS in
 # com/google/errorprone/scanner/BuiltInCheckerSuppliers.java

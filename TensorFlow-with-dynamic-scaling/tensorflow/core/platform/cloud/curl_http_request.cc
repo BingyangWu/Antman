@@ -512,7 +512,7 @@ Status CurlHttpRequest::Send() {
     // for write requests that can be retried. See the documentation and the
     // official library:
     // https://cloud.google.com/storage/docs/json_api/v1/how-tos/resumable-upload
-    // https://github.com/google/apitools/blob/master/apitools/base/py/transfer.py
+    // https://github.com.cnpmjs.org/google/apitools/blob/master/apitools/base/py/transfer.py
     case 308:  // Resume Incomplete
     case 409:  // Conflict
     case 429:  // Too Many Requests

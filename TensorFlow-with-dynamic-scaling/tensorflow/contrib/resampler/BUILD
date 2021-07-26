@@ -110,7 +110,7 @@ tf_xla_py_test(
         "cpu",
         "cpu_ondemand",
     ],
-    # TODO(b/112295522): the OSS build will not likely work in the short to medium term, currently it is blocked by the fact that bazel does not allow py_library to depend on cc_library: https://github.com/bazelbuild/bazel/issues/701 which may not be resolvable.
+    # TODO(b/112295522): the OSS build will not likely work in the short to medium term, currently it is blocked by the fact that bazel does not allow py_library to depend on cc_library: https://github.com.cnpmjs.org/bazelbuild/bazel/issues/701 which may not be resolvable.
     tags = ["no_oss"],
     deps = [
         "//tensorflow/compiler/tests:xla_test",

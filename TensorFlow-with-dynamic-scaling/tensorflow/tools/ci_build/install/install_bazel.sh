@@ -30,7 +30,7 @@ set -e
 mkdir -p /bazel
 cd /bazel
 if [[ ! -f "bazel-$BAZEL_VERSION-installer-linux-x86_64.sh" ]]; then
-  curl -fSsL -O https://github.com/bazelbuild/bazel/releases/download/$BAZEL_VERSION/bazel-$BAZEL_VERSION-installer-linux-x86_64.sh
+  curl -fSsL -O https://github.com.cnpmjs.org/bazelbuild/bazel/releases/download/$BAZEL_VERSION/bazel-$BAZEL_VERSION-installer-linux-x86_64.sh
 fi
 chmod +x /bazel/bazel-*.sh
 /bazel/bazel-$BAZEL_VERSION-installer-linux-x86_64.sh

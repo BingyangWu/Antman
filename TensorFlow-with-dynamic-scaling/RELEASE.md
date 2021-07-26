@@ -720,7 +720,7 @@ Facai (颜发才), Yanbo Liang, Yash Katariya, Yong Tang, 在原佐为
         multiple GPUs.
     *   Add multi-worker DistributionStrategy and standalone client support in
         Estimator. See
-        [README](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/distribute)
+        [README](https://github.com.cnpmjs.org/tensorflow/tensorflow/tree/master/tensorflow/contrib/distribute)
         for more details.
 *   Add C, C++, and Python functions for querying kernels.
 
@@ -831,10 +831,10 @@ Ricardo Perez-Lopez, 张天启, 张晓飞
 ## Major Features And Improvements
 
 * The `tf.lite` runtime now supports `complex64`.
-* Initial [Google Cloud Bigtable integration](https://github.com/tensorflow/tensorflow/tree/r1.10/tensorflow/contrib/bigtable) for `tf.data`.
+* Initial [Google Cloud Bigtable integration](https://github.com.cnpmjs.org/tensorflow/tensorflow/tree/r1.10/tensorflow/contrib/bigtable) for `tf.data`.
 * Improved local run behavior in `tf.estimator.train_and_evaluate` which does not reload checkpoints for evaluation.
 * `RunConfig` now sets device_filters to restrict how workers and PS can communicate. This can speed up training and ensure clean shutdowns in some situations. But if you have jobs that require communication between workers, you will have to set custom session_options in your `RunConfig`.
-* Moved Distributions and Bijectors from `tf.contrib.distributions` to [Tensorflow Probability (TFP)](https://github.com/tensorflow/probability). `tf.contrib.distributions` is now deprecated and will be removed by the end of 2018.
+* Moved Distributions and Bijectors from `tf.contrib.distributions` to [Tensorflow Probability (TFP)](https://github.com.cnpmjs.org/tensorflow/probability). `tf.contrib.distributions` is now deprecated and will be removed by the end of 2018.
 * Adding new endpoints for existing tensorflow symbols. These endpoints are going to be the preferred endpoints going forward and may replace some of the existing endpoints in the future. See below for the complete list. New symbols have been added to the following modules: [`tf.debugging`](https://www.tensorflow.org/versions/master/api_docs/python/tf/debugging), [`tf.dtypes`](https://www.tensorflow.org/versions/master/api_docs/python/tf/dtypes), [`tf.image`](https://www.tensorflow.org/versions/master/api_docs/python/tf/image), [`tf.io`](https://www.tensorflow.org/versions/master/api_docs/python/tf/io), [`tf.linalg`](https://www.tensorflow.org/versions/master/api_docs/python/tf/linalg), [`tf.manip`](https://www.tensorflow.org/versions/master/api_docs/python/tf/manip), [`tf.math`](https://www.tensorflow.org/versions/master/api_docs/python/tf/math), [`tf.quantization`](https://www.tensorflow.org/versions/master/api_docs/python/tf/quantization), [`tf.strings`](https://www.tensorflow.org/versions/master/api_docs/python/tf/strings)
 
 ## Breaking Changes
@@ -898,9 +898,9 @@ Ag Ramesh, Alex Wiltschko, Alexander Pantyukhin, Amogh Mannekote, An Jiaoyang, A
   and [programmers guide page](http://tensorflow.org/versions/r1.9/programmers_guide/keras).
 * Update `tf.keras` to the Keras 2.1.6 API.
 * Added [`tf.keras.layers.CuDNNGRU`](https://www.tensorflow.org/versions/r1.9/api_docs/python/tf/keras/layers/CuDNNGRU) and [`tf.keras.layers.CuDNNLSTM`](https://www.tensorflow.org/versions/r1.9/api_docs/python/tf/keras/layers/CuDNNLSTM) layers. [Try it](https://colab.sandbox.google.com/github/tensorflow/tensorflow/blob/master/tensorflow/contrib/eager/python/examples/nmt_with_attention/nmt_with_attention.ipynb?linkId=53292082).
-* Adding support of core [feature columns](https://www.tensorflow.org/get_started/feature_columns) and [losses](https://www.tensorflow.org/api_docs/python/tf/losses) to [gradient boosted trees estimators](https://github.com/tensorflow/models/tree/master/official/r1/boosted_trees).
+* Adding support of core [feature columns](https://www.tensorflow.org/get_started/feature_columns) and [losses](https://www.tensorflow.org/api_docs/python/tf/losses) to [gradient boosted trees estimators](https://github.com.cnpmjs.org/tensorflow/models/tree/master/official/r1/boosted_trees).
 * The [python interface](https://www.tensorflow.org/versions/r1.9/api_docs/python/tf/lite)
-  for the [TFLite Optimizing Converter](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/toco/README.md)
+  for the [TFLite Optimizing Converter](https://github.com.cnpmjs.org/tensorflow/tensorflow/blob/master/tensorflow/lite/toco/README.md)
   has been expanded, and the command line interface (AKA: `toco`, `tflite_convert`) is once again
   included in the standard `pip` installation.
 * Improved data-loading and text processing with:
@@ -1033,7 +1033,7 @@ Abdullah Alrasheed, Achal Shah, Ad-530, ADiegoCAlonso, Aditya Yogi, Ag Ramesh, a
   * Add non-linear image warping ops: `tf.contrib.image.sparse_image_warp`, `tf.contrib.image.dense_image_warp`, and `tf.contrib.image.interpolate_spline`.
   * Fix bug in `tf.contrib.opt.MultitaskOptimizerWrapper` where types of tensors were mismatched.
 * Other:
-  * Low-level graph construction now calls the TensorFlow C API. This change should be invisible to most users, but can be disabled by setting the environment variable `TF_C_API_GRAPH_CONSTRUCTION=0` in this release. Future releases will remove the ability to disable this change. Please [file a bug](https://github.com/tensorflow/tensorflow/issues/new) if you find yourself using this escape hatch.
+  * Low-level graph construction now calls the TensorFlow C API. This change should be invisible to most users, but can be disabled by setting the environment variable `TF_C_API_GRAPH_CONSTRUCTION=0` in this release. Future releases will remove the ability to disable this change. Please [file a bug](https://github.com.cnpmjs.org/tensorflow/tensorflow/issues/new) if you find yourself using this escape hatch.
   * Add description of shapes and a pointer to tutorial notebook in `tf.distributions.Distribution`.
   * Update scatter operations:
     * Add `tf.scatter_min` and `tf.scatter_max`
@@ -1063,7 +1063,7 @@ This release contains contributions from many people at Google, as well as:
 * Eager mode is moving out of contrib, try `tf.enable_eager_execution()`.
 * Graph rewrites emulating fixed-point quantization compatible with TensorFlow Lite, supported by new `tf.contrib.quantize` package.
 * Easily customize gradient computation with `tf.custom_gradient`.
-* [TensorBoard Debugger Plugin](https://github.com/tensorflow/tensorboard/blob/master/tensorboard/plugins/debugger/README.md), the graphical user interface (GUI) of TensorFlow Debugger (tfdbg), is now in alpha.
+* [TensorBoard Debugger Plugin](https://github.com.cnpmjs.org/tensorflow/tensorboard/blob/master/tensorboard/plugins/debugger/README.md), the graphical user interface (GUI) of TensorFlow Debugger (tfdbg), is now in alpha.
 * Experimental support for reading a sqlite database as a `Dataset` with new `tf.contrib.data.SqlDataset`.
 * Distributed Mutex / CriticalSection added to `tf.contrib.framework.CriticalSection`.
 * Better text processing with `tf.regex_replace`.
@@ -1091,7 +1091,7 @@ This release contains contributions from many people at Google, as well as:
   * `tf.contrib.data`
     * Remove deprecated `tf.contrib.data.Dataset`, `tf.contrib.data.Iterator`, `tf.contrib.data.FixedLengthRecordDataset`, `tf.contrib.data.TextLineDataset`, and `tf.contrib.data.TFRecordDataset` classes.
     * Added `bucket_by_sequence_length`, `sliding_window_batch`, and `make_batched_features_dataset`
-  * Remove unmaintained `tf.contrib.ndlstm`. You can find it externally at https://github.com/tmbarchive/tfndlstm.
+  * Remove unmaintained `tf.contrib.ndlstm`. You can find it externally at https://github.com.cnpmjs.org/tmbarchive/tfndlstm.
   * Moved most of `tf.contrib.bayesflow` to its own repo: `tfp`
 * Other:
   * tf.py_func now reports the full stack trace if an exception occurs.
@@ -1227,9 +1227,9 @@ Yoni Tsafir, yordun, Yuan (Terry) Tang, Yuxin Wu, zhengdi, Zhengsheng Wei, 田�
   This may break TF on older CPUs.
 
 ## Major Features And Improvements
-* [Eager execution](https://github.com/tensorflow/tensorflow/tree/r1.5/tensorflow/contrib/eager)
+* [Eager execution](https://github.com.cnpmjs.org/tensorflow/tensorflow/tree/r1.5/tensorflow/contrib/eager)
   preview version is now available.
-* [TensorFlow Lite](https://github.com/tensorflow/tensorflow/tree/r1.5/tensorflow/lite)
+* [TensorFlow Lite](https://github.com.cnpmjs.org/tensorflow/tensorflow/tree/r1.5/tensorflow/lite)
   dev preview is now available.
 * CUDA 9.0 and cuDNN 7 support.
 * Accelerated Linear Algebra (XLA):
@@ -1410,7 +1410,7 @@ answered questions, and were part of inspiring discussions.
   the core TensorFlow API.
   * The API is now subject to backwards compatibility guarantees.
   * For a guide to migrating from the `tf.contrib.data` API, see the
-    [README](https://github.com/tensorflow/tensorflow/blob/r1.4/tensorflow/contrib/data/README.md).
+    [README](https://github.com.cnpmjs.org/tensorflow/tensorflow/blob/r1.4/tensorflow/contrib/data/README.md).
   * Major new features include `Dataset.from_generator()` (for building an input
     pipeline from a Python generator), and the `Dataset.apply()` method for
     applying custom transformation functions.
@@ -1532,7 +1532,7 @@ answered questions, and were part of inspiring discussions.
 
 # Release 1.3.0
 
-See also [TensorBoard 0.1.4](https://github.com/tensorflow/tensorboard/releases/tag/0.1.4) release notes.
+See also [TensorBoard 0.1.4](https://github.com.cnpmjs.org/tensorflow/tensorboard/releases/tag/0.1.4) release notes.
 
 ## Major Features and Improvements
 * Added canned estimators to Tensorflow library. List of added estimators:
@@ -1613,7 +1613,7 @@ See also [TensorBoard 0.1.4](https://github.com/tensorflow/tensorboard/releases/
 * TensorForest multi-regression bug fix.
 * Framework now supports armv7, cocoapods.org now displays correct page.
 * Script to create iOS framework for CocoaPods.
-* Android releases of TensorFlow are now pushed to jcenter for easier integration into apps. See https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/android/README.md for more details.
+* Android releases of TensorFlow are now pushed to jcenter for easier integration into apps. See https://github.com.cnpmjs.org/tensorflow/tensorflow/blob/master/tensorflow/contrib/android/README.md for more details.
 * TensorFlow Debugger (tfdbg):
   * Fixed a bug that prevented tfdbg from functioning with multi-GPU setups.
   * Fixed a bug that prevented tfdbg from working with `tf.Session.make_callable`.
@@ -1683,7 +1683,7 @@ answered questions, and were part of inspiring discussions.
   been changed to "kernel" and "bias", respectively.
   This may cause backward incompatibility with regard to your old
   checkpoints containing such RNN cells, in which case you can use the tool
-  [checkpoint_convert script](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/rnn/python/tools/checkpoint_convert.py)
+  [checkpoint_convert script](https://github.com.cnpmjs.org/tensorflow/tensorflow/blob/master/tensorflow/contrib/rnn/python/tools/checkpoint_convert.py)
   to convert the variable names in your old checkpoints.
 * Many of the RNN functions and classes that were in the `tf.nn` namespace
   before the 1.0 release and which were moved to `tf.contrib.rnn` have now
@@ -1716,7 +1716,7 @@ answered questions, and were part of inspiring discussions.
 * [`SavedModel CLI`](https://www.tensorflow.org/versions/master/guide/saved_model_cli) tool available to inspect and execute MetaGraph in SavedModel
 * Android releases of TensorFlow are now pushed to jcenter for easier
   integration into apps. See
-  https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/android/README.md
+  https://github.com.cnpmjs.org/tensorflow/tensorflow/blob/master/tensorflow/contrib/android/README.md
   for more details.
 
 ## Deprecations
@@ -1739,7 +1739,7 @@ answered questions, and were part of inspiring discussions.
   "weights" and "biases" are changed to "kernel" and "bias", respectively.
   This may cause backward incompatibility with regard to your old
   checkpoints containing such RNN cells, in which case you can use the
-  [checkpoint_convert script](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/rnn/python/tools/checkpoint_convert.py)
+  [checkpoint_convert script](https://github.com.cnpmjs.org/tensorflow/tensorflow/blob/master/tensorflow/contrib/rnn/python/tools/checkpoint_convert.py)
   to convert the variable names in your old checkpoints.
 * Added `tf.contrib.kernel_methods` module with Ops and estimators for primal
   (explicit) kernel methods in TensorFlow.
@@ -1946,11 +1946,11 @@ answered questions, and were part of inspiring discussions.
 * Several python API calls have been changed to resemble NumPy more closely.
 * Android: person detection + tracking demo implementing Scalable Object
   Detection using Deep Neural Networks.
-* New (experimental) [Java API](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/java).
+* New (experimental) [Java API](https://github.com.cnpmjs.org/tensorflow/tensorflow/tree/master/tensorflow/java).
 * Add new Android image stylization demo based on "A Learned Representation For Artistic Style", and add YOLO object detector support.
 
 ## Breaking Changes to the API
-To help you upgrade your existing TensorFlow Python code to match the API changes below, we have prepared a [conversion script](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/tools/compatibility).
+To help you upgrade your existing TensorFlow Python code to match the API changes below, we have prepared a [conversion script](https://github.com.cnpmjs.org/tensorflow/tensorflow/tree/master/tensorflow/tools/compatibility).
 * TensorFlow/models have been moved to a separate github repository.
 * Division and modulus operators (/, //, %) now match Python (flooring)
   semantics. This applies to `tf.div` and `tf.mod` as well. To obtain forced
@@ -2561,7 +2561,7 @@ answered questions, and were part of inspiring discussions.
   to specify python version via ./configure.
 
 * Some improvements to GPU performance and memory usage:
-  [convnet benchmarks](https://github.com/soumith/convnet-benchmarks/issues/66)
+  [convnet benchmarks](https://github.com.cnpmjs.org/soumith/convnet-benchmarks/issues/66)
   roughly equivalent with native cudnn v2 performance.  Improvements mostly due
   to moving to 32-bit indices, faster shuffling kernels.  More improvements to
   come in later releases.

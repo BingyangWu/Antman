@@ -7,7 +7,7 @@ The TensorFlow [C
 API](https://www.tensorflow.org/code/tensorflow/c/c_api.h)
 is typically a requirement of TensorFlow APIs in other languages such as
 [Go](https://www.tensorflow.org/code/tensorflow/go)
-and [Rust](https://github.com/tensorflow/rust).
+and [Rust](https://github.com.cnpmjs.org/tensorflow/rust).
 
 The following commands:
 

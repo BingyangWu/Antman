@@ -326,7 +326,7 @@ you can solve it via either of the following approaches:
   the full path of the gRPC `roots.pem` file on your file system if it's in a
   different location
 
-[grpcPem]: https://github.com/grpc/grpc/blob/master/etc/roots.pem
+[grpcPem]: https://github.com.cnpmjs.org/grpc/grpc/blob/master/etc/roots.pem
 
 ### Permission denied errors
 

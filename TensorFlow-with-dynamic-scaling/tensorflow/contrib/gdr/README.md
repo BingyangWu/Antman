@@ -72,7 +72,7 @@ Legend:
   NV#  = Connection traversing a bonded set of # NVLinks
 ```
 
-3. The [`nv_peer_mem`](https://github.com/Mellanox/nv_peer_memory) kernel module is installed.
+3. The [`nv_peer_mem`](https://github.com.cnpmjs.org/Mellanox/nv_peer_memory) kernel module is installed.
 
 How to build and run in GDR mode
 ===

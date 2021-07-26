@@ -5,10 +5,10 @@ SPINN: Stack-Augmented Parser-Interpreter Neural Network.
 Ths file contains model definition and code for training the model.
 
 The model definition is based on PyTorch implementation at:
-  https://github.com/jekbradbury/examples/tree/spinn/snli
+  https://github.com.cnpmjs.org/jekbradbury/examples/tree/spinn/snli
 
 which was released under a BSD 3-Clause License at:
-https://github.com/jekbradbury/examples/blob/spinn/LICENSE:
+https://github.com.cnpmjs.org/jekbradbury/examples/blob/spinn/LICENSE:
 
 Copyright (c) 2017,
 All rights reserved.

@@ -93,7 +93,7 @@ def _windows_msvc_impl(ctx):
     builtin_sysroot = None
 
     cxx_builtin_include_directories = [
-        # This is a workaround for https://github.com/bazelbuild/bazel/issues/5087.
+        # This is a workaround for https://github.com.cnpmjs.org/bazelbuild/bazel/issues/5087.
         "C:\\botcode\\w",
         "c:/tools/msys64/usr/",
         "C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\VC\\INCLUDE",
@@ -1267,7 +1267,7 @@ def _windows_msys_mingw_impl(ctx):
     ]
 
     cxx_builtin_include_directories = [
-        # This is a workaround for https://github.com/bazelbuild/bazel/issues/5087.
+        # This is a workaround for https://github.com.cnpmjs.org/bazelbuild/bazel/issues/5087.
         "C:\\botcode\\w",
         "c:/tools/msys64/mingw64/",
         "C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\VC\\INCLUDE",
@@ -1338,7 +1338,7 @@ def _armeabi_impl(ctx):
     features = [supports_dynamic_linker_feature, supports_pic_feature]
 
     cxx_builtin_include_directories = [
-        # This is a workaround for https://github.com/bazelbuild/bazel/issues/5087.
+        # This is a workaround for https://github.com.cnpmjs.org/bazelbuild/bazel/issues/5087.
         "C:\\botcode\\w",
     ]
     artifact_name_patterns = []
@@ -1401,7 +1401,7 @@ def _impl(ctx):
     ]
 
     cxx_builtin_include_directories = [
-        # This is a workaround for https://github.com/bazelbuild/bazel/issues/5087.
+        # This is a workaround for https://github.com.cnpmjs.org/bazelbuild/bazel/issues/5087.
         "C:\\botcode\\w",
         "c:/tools/msys64/usr/",
         "C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\VC\\INCLUDE",

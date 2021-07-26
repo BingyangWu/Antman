@@ -485,7 +485,7 @@ def tf_binary_dynamic_kernel_deps(kernels):
 # Shared libraries have different name pattern on different platforms,
 # but cc_binary cannot output correct artifact name yet,
 # so we generate multiple cc_binary targets with all name patterns when necessary.
-# TODO(pcloudy): Remove this workaround when https://github.com/bazelbuild/bazel/issues/4570
+# TODO(pcloudy): Remove this workaround when https://github.com.cnpmjs.org/bazelbuild/bazel/issues/4570
 # is done and cc_shared_library is available.
 SHARED_LIBRARY_NAME_PATTERNS = [
     "lib%s.so%s",  # On Linux, shared libraries are usually named as libfoo.so
@@ -1008,7 +1008,7 @@ def tf_cc_test(
         # function.
         linkstatic = linkstatic or select({
             # cc_tests with ".so"s in srcs incorrectly link on Darwin unless
-            # linkstatic=1 (https://github.com/bazelbuild/bazel/issues/3450).
+            # linkstatic=1 (https://github.com.cnpmjs.org/bazelbuild/bazel/issues/3450).
             # TODO(allenl): Remove Mac static linking when Bazel 0.6 is out.
             clean_dep("//tensorflow:macos"): 1,
             "//conditions:default": 0,
@@ -1439,7 +1439,7 @@ def tf_kernel_library(
 
     # Override EIGEN_STRONG_INLINE to inline when
     # --define=override_eigen_strong_inline=true to avoid long compiling time.
-    # See https://github.com/tensorflow/tensorflow/issues/10521
+    # See https://github.com.cnpmjs.org/tensorflow/tensorflow/issues/10521
     copts = copts + if_override_eigen_strong_inline(["/DEIGEN_STRONG_INLINE=inline"])
     if prefix:
         if native.glob([prefix + "*.cu.cc"], exclude = ["*test*"]):
@@ -1786,7 +1786,7 @@ def tf_custom_op_library(name, srcs = [], gpu_srcs = [], deps = [], linkopts = [
 
     # Override EIGEN_STRONG_INLINE to inline when
     # --define=override_eigen_strong_inline=true to avoid long compiling time.
-    # See https://github.com/tensorflow/tensorflow/issues/10521
+    # See https://github.com.cnpmjs.org/tensorflow/tensorflow/issues/10521
     copts = copts + if_override_eigen_strong_inline(["/DEIGEN_STRONG_INLINE=inline"])
 
     if gpu_srcs:
@@ -1987,7 +1987,7 @@ def tf_py_wrap_cc(
     # file with the canonical lib schema (e.g. libNAME.so), so that
     # -l%(so_name) is resolved during linking.
     #
-    # See: https://github.com/bazelbuild/bazel/blob/7a6808260a733d50983c1adf0cf5a7493472267f/src/main/java/com/google/devtools/build/lib/rules/cpp/LibrariesToLinkCollector.java#L319
+    # See: https://github.com.cnpmjs.org/bazelbuild/bazel/blob/7a6808260a733d50983c1adf0cf5a7493472267f/src/main/java/com/google/devtools/build/lib/rules/cpp/LibrariesToLinkCollector.java#L319
     for pattern in SHARED_LIBRARY_NAME_PATTERNS:
         name_os = pattern % (cc_library_base, "")
         native.genrule(
@@ -2052,7 +2052,7 @@ register_extension_info(
 
 # Similar to py_test above, this macro is used to exclude dependencies for some py_binary
 # targets in order to reduce the size of //tensorflow/tools/pip_package:simple_console_windows.
-# See https://github.com/tensorflow/tensorflow/issues/22390
+# See https://github.com.cnpmjs.org/tensorflow/tensorflow/issues/22390
 def py_binary(name, deps = [], **kwargs):
     # Add an extra target for dependencies to avoid nested select statement.
     native.py_library(

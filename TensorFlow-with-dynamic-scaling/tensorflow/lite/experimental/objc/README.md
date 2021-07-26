@@ -9,7 +9,7 @@ supporting hardware acceleration.
 
 To build the Objective-C TensorFlow Lite library on Apple platforms,
 [install from source](https://www.tensorflow.org/install/source#setup_for_linux_and_macos)
-or [clone the GitHub repo](https://github.com/tensorflow/tensorflow).
+or [clone the GitHub repo](https://github.com.cnpmjs.org/tensorflow/tensorflow).
 Then, configure TensorFlow by navigating to the root directory and executing the
 `configure.py` script:
 
@@ -83,9 +83,9 @@ bazel test tensorflow/lite/experimental/objc:Tests
 #### Generate the Xcode project using Tulsi
 
 Open the `//tensorflow/lite/experimental/objc/TensorFlowLite.tulsiproj` using
-the [TulsiApp](https://github.com/bazelbuild/tulsi)
+the [TulsiApp](https://github.com.cnpmjs.org/bazelbuild/tulsi)
 or by running the
-[`generate_xcodeproj.sh`](https://github.com/bazelbuild/tulsi/blob/master/src/tools/generate_xcodeproj.sh)
+[`generate_xcodeproj.sh`](https://github.com.cnpmjs.org/bazelbuild/tulsi/blob/master/src/tools/generate_xcodeproj.sh)
 script from the root `tensorflow` directory:
 
 ```shell

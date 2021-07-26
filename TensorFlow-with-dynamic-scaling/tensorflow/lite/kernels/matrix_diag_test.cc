@@ -51,7 +51,7 @@ class MatrixDiagOpModel : public SingleOpModel {
 
 // Use the machinery of TYPED_TEST_SUITE to test all supported types.
 // See
-// https://github.com/google/googletest/blob/master/googletest/docs/advanced.md#typed-tests
+// https://github.com.cnpmjs.org/google/googletest/blob/master/googletest/docs/advanced.md#typed-tests
 // for details.
 template <typename T>
 class MatrixDiagOpTest : public ::testing::Test {};

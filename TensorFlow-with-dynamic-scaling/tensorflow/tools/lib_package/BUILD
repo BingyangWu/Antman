@@ -22,8 +22,8 @@ pkg_tar(
     name = "libtensorflow",
     extension = "tar.gz",
     # Mark as "manual" till
-    # https://github.com/bazelbuild/bazel/issues/2352
-    # and https://github.com/bazelbuild/bazel/issues/1580
+    # https://github.com.cnpmjs.org/bazelbuild/bazel/issues/2352
+    # and https://github.com.cnpmjs.org/bazelbuild/bazel/issues/1580
     # are resolved, otherwise these rules break when built
     # with Python 3.
     tags = ["manual"],
@@ -44,8 +44,8 @@ pkg_tar(
     ],
     extension = "tar.gz",
     # Mark as "manual" till
-    # https://github.com/bazelbuild/bazel/issues/2352
-    # and https://github.com/bazelbuild/bazel/issues/1580
+    # https://github.com.cnpmjs.org/bazelbuild/bazel/issues/2352
+    # and https://github.com.cnpmjs.org/bazelbuild/bazel/issues/1580
     # are resolved, otherwise these rules break when built
     # with Python 3.
     tags = ["manual"],
@@ -76,8 +76,8 @@ pkg_tar(
     ],
     package_dir = "include/tensorflow/c",
     # Mark as "manual" till
-    # https://github.com/bazelbuild/bazel/issues/2352
-    # and https://github.com/bazelbuild/bazel/issues/1580
+    # https://github.com.cnpmjs.org/bazelbuild/bazel/issues/2352
+    # and https://github.com.cnpmjs.org/bazelbuild/bazel/issues/1580
     # are resolved, otherwise these rules break when built
     # with Python 3.
     tags = ["manual"],
@@ -90,8 +90,8 @@ pkg_tar(
     ],
     package_dir = "include/tensorflow/c/eager",
     # Mark as "manual" till
-    # https://github.com/bazelbuild/bazel/issues/2352
-    # and https://github.com/bazelbuild/bazel/issues/1580
+    # https://github.com.cnpmjs.org/bazelbuild/bazel/issues/2352
+    # and https://github.com.cnpmjs.org/bazelbuild/bazel/issues/1580
     # are resolved, otherwise these rules break when built
     # with Python 3.
     tags = ["manual"],
@@ -112,8 +112,8 @@ pkg_tar(
         },
     ),
     # Mark as "manual" till
-    # https://github.com/bazelbuild/bazel/issues/2352
-    # and https://github.com/bazelbuild/bazel/issues/1580
+    # https://github.com.cnpmjs.org/bazelbuild/bazel/issues/2352
+    # and https://github.com.cnpmjs.org/bazelbuild/bazel/issues/1580
     # are resolved, otherwise these rules break when built
     # with Python 3.
     tags = ["manual"],
@@ -127,8 +127,8 @@ pkg_tar(
         "//:LICENSE",
     ],
     # Mark as "manual" till
-    # https://github.com/bazelbuild/bazel/issues/2352
-    # and https://github.com/bazelbuild/bazel/issues/1580
+    # https://github.com.cnpmjs.org/bazelbuild/bazel/issues/2352
+    # and https://github.com.cnpmjs.org/bazelbuild/bazel/issues/1580
     # are resolved, otherwise these rules break when built
     # with Python 3.
     tags = ["manual"],
@@ -283,8 +283,8 @@ sh_test(
         ":libtensorflow.tar.gz",
     ],
     # Mark as "manual" till
-    # https://github.com/bazelbuild/bazel/issues/2352
-    # and https://github.com/bazelbuild/bazel/issues/1580
+    # https://github.com.cnpmjs.org/bazelbuild/bazel/issues/2352
+    # and https://github.com.cnpmjs.org/bazelbuild/bazel/issues/1580
     # are resolved, otherwise these rules break when built
     # with Python 3.
     # Till then, this test is explicitly executed when building
@@ -302,8 +302,8 @@ sh_test(
         "//tensorflow/java:libtensorflow.jar",
     ],
     # Mark as "manual" till
-    # https://github.com/bazelbuild/bazel/issues/2352
-    # and https://github.com/bazelbuild/bazel/issues/1580
+    # https://github.com.cnpmjs.org/bazelbuild/bazel/issues/2352
+    # and https://github.com.cnpmjs.org/bazelbuild/bazel/issues/1580
     # are resolved, otherwise these rules break when built
     # with Python 3.
     # Till then, this test is explicitly executed when building
