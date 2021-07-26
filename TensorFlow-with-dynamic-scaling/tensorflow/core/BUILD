@@ -3190,6 +3190,26 @@ CORE_CPU_LIB_HEADERS = CORE_CPU_BASE_HDRS + [
     "graph/quantize_training.h",
 ] + if_mkl(["graph/mkl_graph_util.h"])
 
+GPU_RUNTIME_HEADERS = [
+    "common_runtime/gpu/gpu_adjustable_allocator.h",
+    "common_runtime/gpu/gpu_bfc_allocator.h",
+    "common_runtime/gpu/gpu_cudamalloc_allocator.h",
+    "common_runtime/gpu/gpu_debug_allocator.h",
+    "common_runtime/gpu/gpu_device.h",
+    "common_runtime/gpu/gpu_host_allocator.h",
+    "common_runtime/gpu/gpu_id.h",
+    "common_runtime/gpu/gpu_id_manager.h",
+    "common_runtime/gpu/gpu_id_utils.h",
+    "common_runtime/gpu/gpu_init.h",
+    "common_runtime/gpu/gpu_managed_allocator.h",
+    "common_runtime/gpu/gpu_mem_allocator.h",
+    "common_runtime/gpu/gpu_process_state.h",
+    "common_runtime/gpu/gpu_stream_util.h",
+    "common_runtime/gpu/gpu_util.h",
+    "common_runtime/gpu/gpu_vmem_allocator.h",
+    "common_runtime/gpu_device_context.h",
+]
+
 tf_cuda_library(
     name = "core_cpu_impl",
     srcs = [
@@ -3263,7 +3283,12 @@ tf_cuda_library(
         "public/session_options.h",
         "public/version.h",
     ],
-    hdrs = CORE_CPU_LIB_HEADERS,
+    hdrs = [
+        "//tensorflow/contrib/resource_management:gpu_resource_management.h",
+        "//tensorflow/contrib/resource_management:file_listener.h",
+        "//tensorflow/contrib/resource_management:gpu_usage_adjustment.h",
+        "//tensorflow/core/platform:stream_executor.h",
+    ] + CORE_CPU_LIB_HEADERS + GPU_RUNTIME_HEADERS,
     copts = tf_copts() + tf_openmp_copts(),
     deps = [
         ":bfc_allocator",
@@ -3282,7 +3307,12 @@ tf_cuda_library(
         "//tensorflow/core/grappler/utils:functions",
         "//tensorflow/core/profiler/lib:traceme",
         "//tensorflow/core/profiler/internal:traceme_recorder",
-        "//tensorflow/contrib/resource_management:gpu_resource_management",
+        "//tensorflow/stream_executor",
+        "//tensorflow/stream_executor/cuda:cuda_platform_id",
+        "//tensorflow/stream_executor/host:host_platform_id",
+        "//tensorflow/stream_executor/platform:dso_loader",
+        "//tensorflow/stream_executor/rocm:rocm_platform_id",
+        "//tensorflow/stream_executor:scratch_allocator",
     ] + mkl_deps(),
     alwayslink = 1,
 )
@@ -3489,26 +3519,6 @@ cc_library(
         ":lib",
     ],
 )
-
-GPU_RUNTIME_HEADERS = [
-    "common_runtime/gpu/gpu_adjustable_allocator.h",
-    "common_runtime/gpu/gpu_bfc_allocator.h",
-    "common_runtime/gpu/gpu_cudamalloc_allocator.h",
-    "common_runtime/gpu/gpu_debug_allocator.h",
-    "common_runtime/gpu/gpu_device.h",
-    "common_runtime/gpu/gpu_host_allocator.h",
-    "common_runtime/gpu/gpu_id.h",
-    "common_runtime/gpu/gpu_id_manager.h",
-    "common_runtime/gpu/gpu_id_utils.h",
-    "common_runtime/gpu/gpu_init.h",
-    "common_runtime/gpu/gpu_managed_allocator.h",
-    "common_runtime/gpu/gpu_mem_allocator.h",
-    "common_runtime/gpu/gpu_process_state.h",
-    "common_runtime/gpu/gpu_stream_util.h",
-    "common_runtime/gpu/gpu_util.h",
-    "common_runtime/gpu/gpu_vmem_allocator.h",
-    "common_runtime/gpu_device_context.h",
-]
 
 tf_cuda_library(
     name = "gpu_runtime_impl",
